@@ -12,6 +12,7 @@ from pathlib import Path
 import argparse
 from typing import List, Dict, Tuple, Optional
 import warnings
+from matplotlib.colors import LinearSegmentedColormap
 warnings.filterwarnings('ignore')
 
 class MetabolicHeatmapGenerator:
@@ -19,6 +20,24 @@ class MetabolicHeatmapGenerator:
         self.data = {}  # genus_name: dataframe
         self.completeness_threshold = 75.0
         self.genus_order = None
+          # Create custom blue-pink-violet colormap
+        self.custom_colormap = self._create_custom_colormap()
+        
+    def _create_custom_colormap(self):
+        """Create a custom blue-pink-violet colormap with stark transitions"""
+        colors = [
+            '#0D1B2A',  # Very dark navy blue (low completeness)
+            '#1B4F93',  # Deep blue
+            '#8E44AD',  # Rich purple/violet  
+            '#E91E63',  # Bright magenta/pink
+            '#6A1B9A'   # Deep violet (high completeness)
+        ]
+        
+        # Create the colormap with fewer intermediate steps for starker transitions
+        custom_cmap = LinearSegmentedColormap.from_list(
+            'blue_pink_violet', colors, N=128
+        )
+        return custom_cmap
         
     def load_files(self, file_paths: List[str], genus_names: Optional[List[str]] = None):
         """Load multiple TSV files, one per genus"""
@@ -146,13 +165,12 @@ class MetabolicHeatmapGenerator:
             if sep in name:
                 truncated = name.split(sep)[0].strip()
                 if len(truncated) <= max_length:
-                    return truncated
-        # Fallback to character limit
+                    return truncated        # Fallback to character limit
         return name[:max_length-3] + '...'
         
     def create_heatmap(self, 
                       figsize: Tuple[int, int] = (12, 16),
-                      cmap: str = 'RdYlBu_r',
+                      cmap: str = 'blue_pink_violet',
                       group_by_class: bool = True,
                       show_class_labels: bool = True,
                       save_path: Optional[str] = None,
@@ -171,11 +189,17 @@ class MetabolicHeatmapGenerator:
         # Create figure
         fig, ax = plt.subplots(figsize=figsize)
         
+        # Use custom colormap if specified, otherwise use the provided one
+        if cmap == 'blue_pink_violet':
+            colormap = self.custom_colormap
+        else:
+            colormap = cmap
+        
         # Create heatmap
         mask = heatmap_df.isna()
         sns.heatmap(heatmap_df, 
                    mask=mask,
-                   cmap=cmap,
+                   cmap=colormap,
                    center=50,
                    vmin=self.completeness_threshold,
                    vmax=100,
@@ -258,7 +282,7 @@ def main():
     parser.add_argument('--order', nargs='+', help='Custom order for genera on X-axis')
     parser.add_argument('--output', '-o', default='metabolic_heatmap.png', help='Output filename')
     parser.add_argument('--figsize', nargs=2, type=int, default=[12, 16], help='Figure size (width height)')
-    parser.add_argument('--cmap', default='RdYlBu_r', help='Colormap (default: RdYlBu_r)')
+    parser.add_argument('--cmap', default='blue_pink_violet', help='Colormap (default: blue_pink_violet)')
     parser.add_argument('--no-grouping', action='store_true', help='Disable grouping by pathway class')
     parser.add_argument('--no-class-labels', action='store_true', help='Hide pathway class labels')
     parser.add_argument('--dpi', type=int, default=300, help='Output DPI (default: 300)')
@@ -328,5 +352,5 @@ gen.set_completeness_threshold(75)
 gen.set_genus_order(['Genus2', 'Genus1', 'Genus3'])  # Custom X-axis order
 
 # Create heatmap
-fig = gen.create_heatmap(figsize=(14, 20), cmap='RdYlBu_r', save_path='my_heatmap.png')
+fig = gen.create_heatmap(figsize=(14, 20), cmap='blue_pink_violet', save_path='my_heatmap.png')
 """
