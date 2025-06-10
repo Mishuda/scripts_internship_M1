@@ -1,0 +1,79 @@
+{
+  "groups": {
+    "Branched-chain amino acid metabolism": [
+      "M00432"
+    ],
+    "Cysteine and methionine metabolism": [
+      "M00338",
+      "M00035"
+    ],
+    "Polyamine biosynthesis": [
+      "M00133",
+      "M00134"
+    ],
+    "Serine and threonine metabolism": [
+      "M00018"
+    ],
+    "Other amino acid metabolism": [
+      "M00026",
+      "M00031",
+      "M00763",
+      "M00844"
+    ],
+    "Carbohydrate metabolism": [
+      "M00001",
+      "M00002",
+      "M00003",
+      "M00307",
+      "M00580",
+      "M00632",
+      "M00741",
+      "M00854"
+    ],
+    "Nucleotide metabolism": [
+      "M00005",
+      "M00048",
+      "M00049",
+      "M00050",
+      "M00051",
+      "M00052",
+      "M00053",
+      "M00554",
+      "M00793",
+      "M00968"
+    ],
+    "Vitamin and cofactor biosynthesis": [
+      "M00125",
+      "M00880",
+      "M00896",
+      "M00899",
+      "M00914",
+      "M00916"
+    ],
+    "Lipid metabolism": [
+      "M00091",
+      "M00364",
+      "M00365"
+    ],
+    "Secondary metabolism": [
+      "M00022"
+    ],
+    "Energy metabolism": [
+      "M00159",
+      "M00986"
+    ]
+  },
+  "labels": {
+    "Branched-chain amino acid metabolism": "Branched-Chain Amino Acids",
+    "Cysteine and methionine metabolism": "Cysteine & Methionine",
+    "Polyamine biosynthesis": "Polyamine Biosynthesis",
+    "Serine and threonine metabolism": "Serine & Threonine",
+    "Other amino acid metabolism": "Other Amino Acids",
+    "Carbohydrate metabolism": "Carbohydrate Metabolism",
+    "Nucleotide metabolism": "Nucleotide Metabolism",
+    "Vitamin and cofactor biosynthesis": "Vitamins & Cofactors",
+    "Lipid metabolism": "Lipid Metabolism",
+    "Secondary metabolism": "Secondary Metabolism",
+    "Energy metabolism": "Energy Metabolism"
+  }
+}

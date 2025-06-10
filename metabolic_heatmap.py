@@ -6,13 +6,13 @@ Creates publication-ready heatmaps for comparing metabolic pathway completeness 
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 from pathlib import Path
 import argparse
 from typing import List, Dict, Tuple, Optional
 import warnings
 from matplotlib.colors import LinearSegmentedColormap
+from plotnine import ggplot, aes, geom_tile, scale_fill_gradient, scale_fill_cmap, labs, theme, element_text, geom_text, guides, guide_colorbar, theme_minimal, element_blank, element_rect, element_line, scale_x_discrete, scale_y_discrete, facet_grid, ggtitle, scale_fill_manual, scale_fill_gradientn, geom_vline, geom_hline
+
 warnings.filterwarnings('ignore')
 
 class MetabolicHeatmapGenerator:
@@ -175,82 +175,74 @@ class MetabolicHeatmapGenerator:
                       show_class_labels: bool = True,
                       save_path: Optional[str] = None,
                       dpi: int = 300,
-                      format: str = 'png') -> plt.Figure:
-        """Create the metabolic pathway heatmap"""
-        
+                      format: str = 'svg') -> 'ggplot':
+        """Create the metabolic pathway heatmap using plotnine and save as SVG"""
         # Prepare data
         heatmap_df, pathway_labels, class_labels = self.prepare_data(group_by_class=group_by_class)
-        
         if heatmap_df.empty:
             raise ValueError("No pathways meet the completeness threshold")
-            
         print(f"Creating heatmap with {len(heatmap_df)} pathways and {len(heatmap_df.columns)} genera")
-        
-        # Create figure
-        fig, ax = plt.subplots(figsize=figsize)
-        
-        # Use custom colormap if specified, otherwise use the provided one
-        if cmap == 'blue_pink_violet':
-            colormap = self.custom_colormap
+
+        # Prepare data for plotnine (long format)
+        df_long = heatmap_df.reset_index().melt(id_vars='index', var_name='Genus', value_name='Completeness')
+        df_long.rename(columns={'index': 'Pathway'}, inplace=True)
+        # Add class labels for facetting if needed
+        if group_by_class and show_class_labels:
+            # Map pathway to class label
+            pathway_to_class = {}
+            modules_list = heatmap_df.index.tolist()
+            for i, pathway in enumerate(modules_list):
+                pathway_to_class[pathway] = class_labels[i] if class_labels[i] else None
+            df_long['Class'] = df_long['Pathway'].map(pathway_to_class)
         else:
-            colormap = cmap
-        
-        # Create heatmap
-        mask = heatmap_df.isna()
-        sns.heatmap(heatmap_df, 
-                   mask=mask,
-                   cmap=colormap,
-                   center=50,
-                   vmin=self.completeness_threshold,
-                   vmax=100,
-                   cbar_kws={'label': 'Pathway Completeness (%)', 'shrink': 0.8},
-                   xticklabels=True,
-                   yticklabels=True,
-                   square=False,
-                   linewidths=0.5,
-                   linecolor='white',
-                   ax=ax)
-        
-        # Customize appearance
-        ax.set_xlabel('Genera', fontsize=14, fontweight='bold')
-        ax.set_ylabel('Metabolic Pathways', fontsize=14, fontweight='bold')
-        ax.set_title(f'Metabolic Pathway Completeness Comparison\n(Threshold: ≥{self.completeness_threshold}%)', 
-                    fontsize=16, fontweight='bold', pad=20)
-        
-        # Rotate x-axis labels
-        plt.setp(ax.get_xticklabels(), rotation=45, ha='right', fontsize=10)
-        plt.setp(ax.get_yticklabels(), rotation=0, fontsize=8)
-        
-        # Add class labels if requested
-        if show_class_labels and group_by_class:
-            current_y = 0
-            for i, label in enumerate(class_labels):
-                if label:  # Non-empty class label
-                    ax.text(-0.5, current_y + 0.5, label, 
-                           ha='right', va='center', fontsize=9, 
-                           fontweight='bold', color='blue',
-                           transform=ax.get_yaxis_transform())
-                    # Add separator line
-                    if current_y > 0:
-                        ax.axhline(y=current_y, color='gray', linestyle='-', alpha=0.3, linewidth=1)
-                current_y = i + 1
-        
-        # Add threshold line to colorbar
-        cbar = ax.collections[0].colorbar
-        cbar.ax.axhline(y=self.completeness_threshold, color='red', linestyle='--', linewidth=2)
-        cbar.ax.text(1.05, self.completeness_threshold, f'{self.completeness_threshold}%', 
-                    transform=cbar.ax.get_yaxis_transform(), 
-                    va='center', ha='left', color='red', fontweight='bold')
-        
-        # Adjust layout
-        plt.tight_layout()
-        
-        # Save if requested
+            df_long['Class'] = None
+
+        # Custom colormap for plotnine
+        from matplotlib.colors import ListedColormap
+        custom_colors = [
+            '#0D1B2A',  # Very dark navy blue (low completeness)
+            '#1B4F93',  # Deep blue
+            '#8E44AD',  # Rich purple/violet  
+            '#E91E63',  # Bright magenta/pink
+            '#6A1B9A'   # Deep violet (high completeness)
+        ]
+        custom_cmap = ListedColormap(custom_colors)
+
+        # Plotnine heatmap
+        p = (
+            ggplot(df_long, aes(x='Genus', y='Pathway', fill='Completeness'))
+            + geom_tile(color='white')
+            + scale_fill_gradientn(colors=custom_colors, limits=(self.completeness_threshold, 100), na_value='#f0f0f0')
+            + labs(
+                x='Genera',
+                y='Metabolic Pathways',
+                fill='Pathway Completeness (%)',
+                title=f'Metabolic Pathway Completeness Comparison\n(Threshold: ≥{self.completeness_threshold}%)'
+            )
+            + theme_minimal()
+            + theme(
+                axis_text_x=element_text(rotation=45, ha='right', size=10),
+                axis_text_y=element_text(size=8),
+                axis_title_x=element_text(size=14, weight='bold'),
+                axis_title_y=element_text(size=14, weight='bold'),
+                plot_title=element_text(size=16, weight='bold', ha='center', va='bottom'),
+                legend_title=element_text(size=12),
+                legend_text=element_text(size=10),
+                figure_size=figsize
+            )
+        )
+        # Optionally facet by class
+        if group_by_class and show_class_labels and df_long['Class'].notnull().any():
+            p += facet_grid('Class~.', scales='free_y', space='free')
+
+        # Save as SVG
         if save_path:
-            plt.savefig(save_path, dpi=dpi, format=format, bbox_inches='tight')
+            if not save_path.lower().endswith('.svg'):
+                save_path = save_path.rsplit('.', 1)[0] + '.svg'
+            p.save(save_path, dpi=dpi, verbose=False)
             print(f"Heatmap saved to {save_path}")
-            
-        return fig
+
+        return p
         
     def print_summary(self):
         """Print summary statistics"""

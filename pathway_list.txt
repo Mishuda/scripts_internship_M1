@@ -1,0 +1,43 @@
+# Pathway list for manual grouping
+# Format: MODULE_ID	PATHWAY_NAME
+
+M00001	Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate
+M00002	Glycolysis, core module involving three-carbon compounds
+M00003	Gluconeogenesis, oxaloacetate => fructose-6P
+M00005	PRPP biosynthesis, ribose 5P => PRPP
+M00018	Threonine biosynthesis, aspartate => homoserine => threonine
+M00022	Shikimate pathway, phosphoenolpyruvate + erythrose-4P => chorismate
+M00026	Histidine biosynthesis, PRPP => histidine
+M00031	Lysine biosynthesis, mediated by LysW, 2-aminoadipate => lysine
+M00035	Methionine degradation
+M00048	De novo purine biosynthesis, PRPP + glutamine => IMP
+M00049	Adenine ribonucleotide biosynthesis, IMP => ADP,ATP
+M00050	Guanine ribonucleotide biosynthesis, IMP => GDP,GTP
+M00051	De novo pyrimidine biosynthesis, glutamine (+ PRPP) => UMP
+M00052	Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP
+M00053	Deoxyribonucleotide biosynthesis, ADP/GDP/CDP/UDP => dATP/dGTP/dCTP/dUTP
+M00091	Phosphatidylcholine (PC) biosynthesis, PE => PC
+M00125	Riboflavin biosynthesis, plants and bacteria, GTP => riboflavin/FMN/FAD
+M00133	Polyamine biosynthesis, arginine => agmatine => putrescine => spermidine
+M00134	Polyamine biosynthesis, arginine => ornithine => putrescine
+M00159	V/A-type ATPase, prokaryotes
+M00307	Pyruvate oxidation, pyruvate => acetyl-CoA
+M00338	Cysteine biosynthesis, homocysteine + serine => cysteine
+M00364	C10-C20 isoprenoid biosynthesis, bacteria
+M00365	C10-C20 isoprenoid biosynthesis, archaea
+M00432	Leucine biosynthesis, 2-oxoisovalerate => 2-oxoisocaproate
+M00554	Nucleotide sugar biosynthesis, galactose => UDP-galactose
+M00580	Pentose phosphate pathway, archaea, fructose 6P => ribose 5P
+M00632	Galactose degradation, Leloir pathway, galactose => alpha-D-glucose-1P
+M00741	Propanoyl-CoA metabolism, propanoyl-CoA => succinyl-CoA
+M00763	Ornithine biosynthesis, mediated by LysW, glutamate => ornithine
+M00793	dTDP-L-rhamnose biosynthesis
+M00844	Arginine biosynthesis, ornithine => arginine
+M00854	Glycogen biosynthesis, glucose-1P => glycogen/starch
+M00880	Molybdenum cofactor biosynthesis, GTP => molybdenum cofactor
+M00896	Thiamine biosynthesis, archaea, AIR (+ NAD+) => TMP/TPP
+M00899	Thiamine salvage pathway, HMP/HET => TMP
+M00914	Coenzyme A biosynthesis, archaea, 2-oxoisovalerate => 4-phosphopantoate => CoA
+M00916	Pyridoxal-P biosynthesis, R5P + glyceraldehyde-3P + glutamine => pyridoxal-P
+M00968	Pentose bisphosphate pathway (nucleoside degradation), archaea, nucleoside/NMP => 3-PGA/glycerone phosphate
+M00986	Sulfur reduction, sulfur => sulfide
