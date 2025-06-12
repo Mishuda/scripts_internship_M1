@@ -25,9 +25,14 @@ class MetabolicHeatmapGenerator:
         self.genus_order = None
         self.pathway_order = None
         self.pathway_groups = None  # Manual pathway groupings
-        self.group_labels = None    # Custom group labels        # Enhanced color schemes
+        self.group_labels = None    # Custom group labels        # Enhanced color schemes with better contrast
         self.color_schemes = {
             'blue_pink_violet': ['#F8BBD9', '#4FC3F7', '#2196F3', '#673AB7', '#4A148C'],
+            'viridis': ['#440154', '#31688e', '#35b779', '#fde725'],
+            'plasma': ['#0d0887', '#6a00a8', '#b12a90', '#e16462', '#fca636', '#f0f921'],
+            'red_yellow': ['#ffffff', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#b10026'],
+            'blue_white_red': ['#053061', '#2166ac', '#4393c3', '#92c5de', '#d1e5f0', '#f7f7f7', '#fddbc7', '#f4a582', '#d6604d', '#b2182b', '#67001f'],
+            'green_blue': ['#f7fcf0', '#e0f3db', '#ccebc5', '#a8ddb5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081']
         }
         
     def _create_colormap(self, scheme_name: str = 'blue_pink_violet') -> LinearSegmentedColormap:
@@ -150,7 +155,8 @@ class MetabolicHeatmapGenerator:
             
         except Exception as e:
             print(f" Error loading pathway groups from {groups_file}: {e}")
-    
+
+    # anywhere it says "pathway" it means "KEGG module" actually
     def set_pathway_groups(self, groups: Dict[str, List[str]], group_labels: Optional[Dict[str, str]] = None):
         """Manually set pathway groups for Y-axis organization
         
@@ -192,8 +198,7 @@ class MetabolicHeatmapGenerator:
             for group_name, pathway_list in self.pathway_groups.items():
                 if pathway_id in pathway_list or pathway_name in pathway_list:
                     return group_name
-        
-        # Fallback to class from data
+          # Fallback to class from data
         for genus_data in self.data.values():
             pathway_row = genus_data[
                 (genus_data['module_accession'] == pathway_id) | 
@@ -208,38 +213,54 @@ class MetabolicHeatmapGenerator:
         
         return 'Other'
         
-    def _truncate_name(self, name: str, max_length: int = 30) -> str:
-        """Intelligently truncate pathway names for display"""
-        if len(name) <= max_length:
-            return name
+    def _truncate_name(self, name: str, module_id: str = '', max_length: int = 50) -> str:
+        """Intelligently truncate pathway names for display with module ID"""
+        # Format with module ID if provided
+        if module_id:
+            prefix = f"{module_id}: "
+            available_length = max_length - len(prefix)
+        else:
+            prefix = ""
+            available_length = max_length
+        
+        # If the full name with prefix fits, return it
+        full_display = prefix + name
+        if len(full_display) <= max_length:
+            return full_display
             
         # Try to truncate at meaningful separators
         separators = [' => ', ', ', '; ', ' / ', ' - ']
         for sep in separators:
             if sep in name:
                 parts = name.split(sep)
-                if len(parts[0]) <= max_length:
-                    return parts[0].strip()
+                if len(prefix + parts[0]) <= max_length:
+                    return prefix + parts[0].strip()
         
         # Truncate at word boundary
         words = name.split()
         truncated = ''
         for word in words:
-            if len(truncated + ' ' + word) <= max_length - 3:
+            test_length = len(prefix + truncated + (' ' + word if truncated else word) + '...')
+            if test_length <= max_length:
                 truncated += (' ' + word) if truncated else word
             else:
                 break
         
-        return (truncated + '...') if truncated else name[:max_length-3] + '...'
+        if truncated:
+            return prefix + truncated + '...'
+        else:
+            # Last resort: truncate the name to fit
+            return prefix + name[:available_length-3] + '...' if available_length > 3 else module_id
         
     def prepare_data(self, group_by_class: bool = True) -> Tuple[pd.DataFrame, List[str], Dict[str, List[int]]]:
         """Prepare data matrix for heatmap with manual grouping"""
         if not self.data:
-            raise ValueError("No data loaded. Please load TSV files first.")
-            
-        # Collect all pathways that meet threshold
+            raise ValueError("No data loaded. Please load TSV files first.")        # Collect all pathways that meet threshold in at least one genus
         pathway_info = {}
         pathway_groups = defaultdict(list)
+        
+        # First pass: collect all pathways and find max completeness across all genera
+        all_pathways = {}  # pathway_id -> {genus: completeness, ...}
         
         for genus_name, df in self.data.items():
             for _, row in df.iterrows():
@@ -247,27 +268,39 @@ class MetabolicHeatmapGenerator:
                 pathway_id = row.get('module_accession', '')
                 pathway_name = row.get('pathway_name', pathway_id)
                 
-                if completeness >= self.completeness_threshold:
-                    if pathway_id not in pathway_info:
-                        pathway_info[pathway_id] = {
-                            'name': pathway_name,
-                            'short_name': self._truncate_name(pathway_name),
-                            'group': self._get_pathway_group(pathway_id, pathway_name),
-                            'max_completeness': completeness
-                        }
-                        pathway_groups[pathway_info[pathway_id]['group']].append(pathway_id)
-                    else:
-                        # Update max completeness
-                        pathway_info[pathway_id]['max_completeness'] = max(
-                            pathway_info[pathway_id]['max_completeness'], 
-                            completeness
-                        )
+                if pathway_id not in all_pathways:
+                    all_pathways[pathway_id] = {}
+                all_pathways[pathway_id][genus_name] = completeness
+                
+                # Store pathway info if not already done
+                if pathway_id not in pathway_info:
+                    pathway_info[pathway_id] = {
+                        'name': pathway_name,
+                        'short_name': self._truncate_name(pathway_name, pathway_id),
+                        'group': self._get_pathway_group(pathway_id, pathway_name),
+                        'max_completeness': completeness
+                    }
+                else:
+                    # Update max completeness across all genera
+                    pathway_info[pathway_id]['max_completeness'] = max(
+                        pathway_info[pathway_id]['max_completeness'], 
+                        completeness
+                    )
         
-        # Sort pathways within groups by completeness (descending)
+        # Second pass: include pathways where at least one genus meets threshold
+        pathways_to_include = set()
+        for pathway_id, genus_completeness in all_pathways.items():
+            max_completeness_across_genera = max(genus_completeness.values())
+            if max_completeness_across_genera >= self.completeness_threshold:
+                pathways_to_include.add(pathway_id)
+                pathway_groups[pathway_info[pathway_id]['group']].append(pathway_id)
+        
+        print(f" Including {len(pathways_to_include)} pathways where at least one genus has ≥{self.completeness_threshold}% completeness")
+          # Sort pathways within groups by completeness (descending) then by module ID
         for group in pathway_groups:
             pathway_groups[group].sort(
-                key=lambda x: pathway_info[x]['max_completeness'], 
-                reverse=True
+                key=lambda x: (-pathway_info[x]['max_completeness'], x),  # Sort by completeness desc, then module ID asc
+                reverse=False  # Because we're using negative completeness for desc order
             )
         
         # Create ordered pathway list
@@ -300,11 +333,9 @@ class MetabolicHeatmapGenerator:
                         if pathway_id in remaining:
                             pathways_list.append(pathway_id)
                             remaining.remove(pathway_id)
-            
-            # Add any remaining pathways
-            pathways_list.extend(sorted(remaining, key=lambda x: pathway_info[x]['short_name']))
-            
-        else:
+              # Add any remaining pathways sorted by completeness then module ID
+            pathways_list.extend(sorted(remaining, key=lambda x: (-pathway_info[x]['max_completeness'], x)))
+              else:
             # Default ordering by groups
             pathways_list = []
             if group_by_class:
@@ -312,13 +343,13 @@ class MetabolicHeatmapGenerator:
                 for group in group_order:
                     pathways_list.extend(pathway_groups[group])
             else:
+                # Sort by completeness (desc) then module ID (asc) for better readability
                 pathways_list = sorted(pathway_info.keys(), 
-                    key=lambda x: pathway_info[x]['short_name'])
+                    key=lambda x: (-pathway_info[x]['max_completeness'], x))
         
         # Set genus order
         genera_list = self.genus_order or sorted(self.data.keys())
-        
-        # Create data matrix
+          # Create data matrix
         matrix_data = []
         pathway_labels = []
         
@@ -330,7 +361,7 @@ class MetabolicHeatmapGenerator:
                     pathway_row = genus_df[genus_df['module_accession'] == pathway_id]
                     if not pathway_row.empty:
                         completeness = float(pathway_row.iloc[0]['completeness'])
-                        row_data.append(completeness if completeness >= self.completeness_threshold else np.nan)
+                        row_data.append(completeness)  # Show all values, not just above threshold
                     else:
                         row_data.append(np.nan)
                 else:
@@ -387,13 +418,19 @@ class MetabolicHeatmapGenerator:
         
         if heatmap_df.empty:
             raise ValueError("No pathways meet the completeness threshold")
-            
-        print(f" Creating heatmap with {len(heatmap_df)} pathways and {len(heatmap_df.columns)} genera")
+              print(f" Creating heatmap with {len(heatmap_df)} pathways and {len(heatmap_df.columns)} genera")
         
-        # Set up the plot with extra space for group labels
-        fig_width, fig_height = figsize
+        # Calculate square cell dimensions based on number of pathways and genera
+        n_pathways = len(heatmap_df)
+        n_genera = len(heatmap_df.columns)
+        
+        # Make cells approximately square by adjusting figure size
+        cell_size = 0.4  # Size of each cell in inches
+        fig_width = max(8, n_genera * cell_size + 8)  # Extra space for labels and colorbar
+        fig_height = max(6, n_pathways * cell_size + 4)  # Extra space for title and labels
+        
         if show_group_labels and group_by_class:
-            fig_width += 2  # Extra space for group labels
+            fig_width += 3  # Extra space for group labels
             
         fig, ax = plt.subplots(figsize=(fig_width, fig_height), facecolor='white')
         
@@ -401,20 +438,18 @@ class MetabolicHeatmapGenerator:
         cmap = self._create_colormap(color_scheme)
         
         # Create mask for missing values
-        mask = heatmap_df.isna()
-          # Plot heatmap
+        mask = heatmap_df.isna()        # Plot heatmap with square aspect ratio
         im = ax.imshow(heatmap_df.values, 
                       cmap=cmap, 
-                      aspect='auto',
-                      vmin=self.completeness_threshold, 
+                      aspect='equal',  # Make cells square
+                      vmin=0,  # Show all values from 0 to 100
                       vmax=100,
                       interpolation='nearest')
-        
-        # Handle missing values with light gray
+          # Handle missing values with light gray
         if mask.any().any():
             ax.imshow(np.where(mask.values, 1, np.nan), 
-                     cmap=ListedColormap(['#f5f5f5']), 
-                     aspect='auto',
+                     cmap=ListedColormap(['#f0f0f0']), 
+                     aspect='equal',  # Keep square cells
                      vmin=0, vmax=1,
                      interpolation='nearest')
         
@@ -426,13 +461,13 @@ class MetabolicHeatmapGenerator:
         # Horizontal lines between rows
         for i in range(len(heatmap_df.index) - 1):
             ax.axhline(y=i + 0.5, color='white', linewidth=1.5, alpha=1.0)
-        
-        # Set ticks and labels
+          # Set ticks and labels with improved formatting
         ax.set_xticks(range(len(heatmap_df.columns)))
-        ax.set_xticklabels(heatmap_df.columns, rotation=45, ha='right', fontsize=font_size['xticks'])
+        ax.set_xticklabels(heatmap_df.columns, rotation=60, ha='right', fontsize=font_size['xticks'], 
+                          fontweight='normal')
         
         ax.set_yticks(range(len(heatmap_df.index)))
-        ax.set_yticklabels(heatmap_df.index, fontsize=font_size['yticks'])
+        ax.set_yticklabels(heatmap_df.index, fontsize=font_size['yticks'], fontweight='normal')
           # Add group separators and labels
         if show_group_separators and group_by_class and group_positions:
             previous_end = 0
@@ -515,12 +550,12 @@ class MetabolicHeatmapGenerator:
             for pathway in sorted(pathways):
                 f.write(f"{pathway}\n")
         
-        print(f"📝 Exported {len(pathways)} pathways to {output_file}")
+        print(f"Exported {len(pathways)} pathways to {output_file}")
         
     def print_summary(self):
         """Print comprehensive summary statistics"""
         if not self.data:
-            print("❌ No data loaded")
+            print(" No data loaded")
             return
             
         print(f"\n{'='*60}")
