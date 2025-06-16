@@ -1,0 +1,670 @@
+module_accession,completeness,pathway_name,pathway_class,matching_ko,missing_ko,sample
+M00001,100.0,"Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00918,K00927,K01689,K01803,K01834,K06859,K11645",,Oleococcus
+M00002,100.0,"Glycolysis, core module involving three-carbon compounds",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00927,K01689,K01803,K01834",,Oleococcus
+M00003,100.0,"Gluconeogenesis, oxaloacetate => fructose-6P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00927,K01596,K01622,K01689,K01803,K01834",,Oleococcus
+M00005,100.0,"PRPP biosynthesis, ribose 5P => PRPP",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K00948,,Oleococcus
+M00048,100.0,"De novo purine biosynthesis, PRPP + glutamine => IMP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00764,K01756,K01923,K01933,K01945,K06863,K08289,K11176,K23264,K23265,K23269",,Oleococcus
+M00049,100.0,"Adenine ribonucleotide biosynthesis, IMP => ADP,ATP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00939,K00940,K01756,K01939",,Oleococcus
+M00052,100.0,"Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00940,K01937,K09903",,Oleococcus
+M00133,100.0,"Polyamine biosynthesis, arginine => agmatine => putrescine => spermidine",Pathway modules; Amino acid metabolism; Polyamine biosynthesis,"K00797,K01480,K01611,K02626",,Oleococcus
+M00134,100.0,"Polyamine biosynthesis, arginine => ornithine => putrescine",Pathway modules; Amino acid metabolism; Polyamine biosynthesis,K01476,,Oleococcus
+M00159,100.0,"V/A-type ATPase, prokaryotes",Pathway modules; Energy metabolism; ATP synthesis,"K02107,K02117,K02118,K02119,K02120,K02121,K02122,K02123,K02124",,Oleococcus
+M00307,100.0,"Pyruvate oxidation, pyruvate => acetyl-CoA",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00169,K00170,K00171,K00172",,Oleococcus
+M00554,100.0,"Nucleotide sugar biosynthesis, galactose => UDP-galactose",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00849,K00965",,Oleococcus
+M00580,100.0,"Pentose phosphate pathway, archaea, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K08093,K08094",,Oleococcus
+M00880,100.0,"Molybdenum cofactor biosynthesis, GTP => molybdenum cofactor",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K03635,K03637,K03638,K03639,K03750",,Oleococcus
+M00899,100.0,"Thiamine salvage pathway, HMP/HET => TMP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00878,K00941",,Oleococcus
+M00916,100.0,"Pyridoxal-P biosynthesis, R5P + glyceraldehyde-3P + glutamine => pyridoxal-P",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K06215,K08681",,Oleococcus
+M00968,100.0,"Pentose bisphosphate pathway (nucleoside degradation), archaea, nucleoside/NMP => 3-PGA/glycerone phosphate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00757,K01601,K18237,K21056",,Oleococcus
+M00986,100.0,"Sulfur reduction, sulfur => sulfide",Pathway modules; Energy metabolism; Sulfur metabolism,K18367,,Oleococcus
+M00051,88.89,"De novo pyrimidine biosynthesis, glutamine (+ PRPP) => UMP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00609,K00610,K00762,K01465,K01591,K17828",K01954,Oleococcus
+M00914,85.71,"Coenzyme A biosynthesis, archaea, 2-oxoisovalerate => 4-phosphopantoate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606,K06982,K09722,K09735,K13038",K02201,Oleococcus
+M00050,75.0,"Guanine ribonucleotide biosynthesis, IMP => GDP,GTP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00088,K00940,K01951",K00942,Oleococcus
+M00632,75.0,"Galactose degradation, Leloir pathway, galactose => alpha-D-glucose-1P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00849,K00965,K01784",K01785,Oleococcus
+M00854,75.0,"Glycogen biosynthesis, glucose-1P => glycogen/starch",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00703,K16149",K00975,Oleococcus
+M00020,66.67,"Serine biosynthesis, glycerate-3P => serine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00058,K01079",K00831,Oleococcus
+M00621,66.67,Glycine cleavage system,Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00282,K00283,K00605",K00382,Oleococcus
+M00741,66.67,"Propanoyl-CoA metabolism, propanoyl-CoA => succinyl-CoA",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K05606","K01965,K01966",Oleococcus
+M00034,62.5,Methionine salvage pathway,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00772,K00789,K00797,K01611,K08963","K00815,K08967,K16054",Oleococcus
+M00115,60.0,"NAD biosynthesis, aspartate => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00767,K01916,K03517","K00278,K00969",Oleococcus
+M00938,60.0,"Pyrimidine deoxyribonucleotide biosynthesis, UDP => dTTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00940,K00943,K03465","K00525,K00526,K01520",Oleococcus
+M00127,58.33,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/tyrosine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K00946,K03147,K03151,K03154","K03148,K03149,K03150",Oleococcus
+M00895,58.33,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/glycine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K00946,K03147,K03151,K03154","K03148,K03149,K03153,K10810",Oleococcus
+M00035,50.0,Methionine degradation,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00789,K01251","K00552,K01697",Oleococcus
+M00053,50.0,"Deoxyribonucleotide biosynthesis, ADP/GDP/CDP/UDP => dATP/dGTP/dCTP/dUTP",Pathway modules; Nucleotide metabolism; Purine metabolism,K00940,"K00525,K00526",Oleococcus
+M00098,50.0,Acylglycerol degradation,Pathway modules; Lipid metabolism; Lipid metabolism,K01054,K01046,Oleococcus
+M00120,50.0,"Coenzyme A biosynthesis, pantothenate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00859,K13038","K00867,K00954",Oleococcus
+M00141,50.0,"C1-unit interconversion, eukaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,K00288,Oleococcus
+M00168,50.0,"CAM (Crassulacean acid metabolism), dark",Pathway modules; Energy metabolism; Carbon fixation,K01595,K00025,Oleococcus
+M00364,50.0,"C10-C20 isoprenoid biosynthesis, bacteria",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K13787,K01823,Oleococcus
+M00365,50.0,"C10-C20 isoprenoid biosynthesis, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K13787,K01823,Oleococcus
+M00620,50.0,"Incomplete reductive citrate cycle, acetyl-CoA => oxoglutarate",Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177,K01677,K01678,K01960","K00024,K01902,K01903,K01959,K18209,K18210",Oleococcus
+M00849,50.0,"C5 isoprenoid biosynthesis, mevalonate pathway, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869,K03186,K06981,K09128,K25517,K25518","K00626,K01641,K01823",Oleococcus
+M00855,50.0,"Glycogen degradation, glycogen => glucose-6P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00688,K22451","K02438,K15779",Oleococcus
+M00896,50.0,"Thiamine biosynthesis, archaea, AIR (+ NAD+) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K00946,K03147",K22699,Oleococcus
+M00165,45.45,Reductive pentose phosphate cycle (Calvin cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00150,K00927,K01601,K01803,K01807","K00615,K00855,K01100,K01623,K01783,K03841",Oleococcus
+M00346,44.44,"Formaldehyde assimilation, serine pathway",Pathway modules; Energy metabolism; Methane metabolism,"K00600,K01595,K01689,K11529","K00018,K00024,K00830,K08691,K08692,K14067",Oleococcus
+M00011,40.0,"Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177,K01677,K01678","K00026,K00234,K00235,K00236,K00237,K01902,K01903",Oleococcus
+M00018,40.0,"Threonine biosynthesis, aspartate => homoserine => threonine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00003,K01733","K00133,K00872,K00928",Oleococcus
+M00029,40.0,Urea cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K00611,K01476","K01755,K01940,K01948",Oleococcus
+M00173,40.0,Reductive citrate cycle (Arnon-Buchanan cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177,K01007,K01595,K01677,K01678","K00024,K00031,K00239,K00240,K01681,K01902,K01903,K15230,K15231",Oleococcus
+M00909,40.0,"UDP-N-acetyl-D-glucosamine biosynthesis, prokaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00820,K03431","K00845,K01810,K04042",Oleococcus
+M00912,37.5,"NAD biosynthesis, tryptophan => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00767,K01916,K07130","K00452,K00453,K00486,K00969,K01556",Oleococcus
+M00532,36.11,Photorespiration,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00600,K00605,K01601,K02437","K00281,K00382,K00830,K03781,K11517,K14272,K15893,K15918,K19269",Oleococcus
+M00123,33.33,"Biotin biosynthesis, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01935",Oleococcus
+M00140,33.33,"C1-unit interconversion, prokaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,"K01491,K01938",Oleococcus
+M00309,33.33,"Non-phosphorylative Entner-Doudoroff pathway, gluconate/galactonate => glycerate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K03738,"K05308,K11395",Oleococcus
+M00345,33.33,"Formaldehyde assimilation, ribulose monophosphate pathway",Pathway modules; Energy metabolism; Methane metabolism,"K08093,K08094","K00850,K01624",Oleococcus
+M00368,33.33,"Ethylene biosynthesis, methionine => ethylene",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00789,"K01762,K05933",Oleococcus
+M00373,33.33,Ethylmalonyl pathway,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K05606","K00023,K00626,K01965,K01966,K08691,K14446,K14447,K14448,K14449,K14451,K17865",Oleococcus
+M00565,33.33,"Trehalose biosynthesis, D-glucose 1P => trehalose",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00703,K16149","K00975,K01214,K01236,K06044",Oleococcus
+M00627,33.33,"beta-Lactam resistance, Bla system",Signature modules; Gene set; Drug resistance,K02171,"K02172,K18766",Oleococcus
+M00842,33.33,"Tetrahydrobiopterin biosynthesis, GTP => BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K00072,K01495",Oleococcus
+M00843,33.33,"L-threo-Tetrahydrobiopterin biosynthesis, GTP => L-threo-BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K01495,K17745",Oleococcus
+M00844,33.33,"Arginine biosynthesis, ornithine => arginine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00611,"K01755,K01940",Oleococcus
+M00913,33.33,"Pantothenate biosynthesis, 2-oxoisovalerate/spermine => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00128,K01918,K13367",Oleococcus
+M00978,33.33,Ornithine-ammonia cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K00611,K01915","K01755,K01940,K01955,K01956,K27542",Oleococcus
+M00374,30.77,Dicarboxylate-hydroxybutyrate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K01007,K01595,K01677,K01678","K00024,K00239,K00240,K00626,K01902,K01903,K14465,K14467,K14534,K15016,K15038",Oleococcus
+M00095,28.57,"C5 isoprenoid biosynthesis, mevalonate pathway",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869","K00626,K00938,K01597,K01641,K01823",Oleococcus
+M00004,25.0,Pentose phosphate pathway (Pentose phosphate cycle),Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K06859","K00033,K00615,K00616,K01783,K13937",Oleococcus
+M00007,25.0,"Pentose phosphate pathway, non-oxidative phase, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K01807,"K00615,K00616,K01783",Oleococcus
+M00009,25.0,"Citrate cycle (TCA cycle, Krebs cycle)",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177,K01677,K01678","K00026,K00031,K00234,K00235,K00236,K00237,K01647,K01681,K01902,K01903",Oleococcus
+M00083,25.0,"Fatty acid biosynthesis, elongation",Pathway modules; Lipid metabolism; Fatty acid metabolism,K00059,"K00208,K00647,K02372",Oleococcus
+M00170,25.0,"C4-dicarboxylic acid cycle, phosphoenolpyruvate carboxykinase type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K01610,K14454,K14455",Oleococcus
+M00172,25.0,"C4-dicarboxylic acid cycle, NADP - malic enzyme type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K00029,K00051,K01006",Oleococcus
+M00308,25.0,"Semi-phosphorylative Entner-Doudoroff pathway, gluconate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K18978,"K00874,K01625,K05308",Oleococcus
+M00633,25.0,"Semi-phosphorylative Entner-Doudoroff pathway, gluconate/galactonate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K18978,"K05308,K11395,K18126",Oleococcus
+M00921,25.0,"Cyclooctatin biosynthesis, dimethylallyl-PP + isopentenyl-PP => cyclooctatin",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of other bacterial compounds,K13787,"K18686,K22997,K22998",Oleococcus
+M00950,25.0,"Biotin biosynthesis, BioU pathway, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K25570",Oleococcus
+M00959,25.0,"Guanine ribonucleotide degradation, GMP => Urate",Pathway modules; Nucleotide metabolism; Purine metabolism,K03787,"K00106,K01487,K03783",Oleococcus
+M00975,25.0,"Betaine degradation, bacteria, betaine => pyruvate",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,K00600,"K00301,K00309,K00479,K01752,K21832",Oleococcus
+M00119,22.22,"Pantothenate biosynthesis, valine/L-aspartate => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00826,K01579,K01918",Oleococcus
+M00059,20.0,"Glycosaminoglycan biosynthesis, heparan sulfate backbone",Pathway modules; Glycan metabolism; Glycosaminoglycan metabolism,K01793,"K02366,K02368,K02369,K02576",Oleococcus
+M00552,20.0,"D-galactonate degradation, De Ley-Doudoroff pathway, D-galactonate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00927,"K00134,K00883,K01631,K01684",Oleococcus
+M00573,20.0,"Biotin biosynthesis, BioI pathway, long-chain-acyl-ACP => pimeloyl-ACP => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K16593,K19563",Oleococcus
+M00577,20.0,"Biotin biosynthesis, BioW pathway, pimelate => pimeloyl-CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01906,K01935",Oleococcus
+M00953,20.0,"Mugineic acid biosynthesis, methionine => 3-epihydroxymugineic acid",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of phytochemical compounds,K00789,"K05953,K14271,K18054,K22374",Oleococcus
+M00526,16.67,"Lysine biosynthesis, DAP dehydrogenase pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,K01714,"K00133,K00215,K00928,K01586,K03340",Oleococcus
+M00572,16.67,"Pimeloyl-ACP biosynthesis, BioC-BioH pathway, malonyl-ACP => pimeloyl-ACP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00059,"K00208,K00647,K02169,K02170,K02372",Oleococcus
+M00609,16.67,"Cysteine biosynthesis, methionine => cysteine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00789,"K01243,K07173,K17216,K17217,K17462",Oleococcus
+M00622,16.67,"Nicotinate degradation, nicotinate => fumarate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01799,"K13995,K14974,K15357,K18028,K18029,K18030",Oleococcus
+M00874,16.67,"Fatty acid biosynthesis in mitochondria, fungi",Pathway modules; Lipid metabolism; Fatty acid metabolism,K00059,"K00645,K03955,K07512,K09458,K11262,K22541",Oleococcus
+M00892,16.67,"UDP-N-acetyl-D-glucosamine biosynthesis, eukaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00820,"K00621,K00844,K00972,K01810,K01836",Oleococcus
+M00935,16.67,Methanofuran biosynthesis,Pathway modules; Energy metabolism; Methane metabolism,K18933,"K06914,K07072,K07144,K09733,K19793",Oleococcus
+M00958,16.67,"Adenine ribonucleotide degradation, AMP => Urate",Pathway modules; Nucleotide metabolism; Purine metabolism,K03787,"K00106,K01490,K03783",Oleococcus
+M00017,14.29,"Methionine biosynthesis, aspartate => homoserine => methionine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00003,"K00133,K00548,K00651,K00928,K01739,K01760",Oleococcus
+M00038,14.29,"Tryptophan metabolism, tryptophan => kynurenine => 2-aminomuconate",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,K07130,"K00452,K00453,K00486,K01556,K03392,K10217",Oleococcus
+M00171,14.29,"C4-dicarboxylic acid cycle, NAD - malic enzyme type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K00025,K00028,K00814,K01006,K14454,K14455",Oleococcus
+M00375,14.29,Hydroxypropionate-hydroxybutylate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01848,K01849,K05606","K00626,K01964,K14465,K14466,K14534,K15016,K15017,K15018,K15019,K15020,K15036,K15037,K15038,K15039",Oleococcus
+M00527,14.29,"Lysine biosynthesis, DAP aminotransferase pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,K01714,"K00133,K00215,K00928,K01586,K01778,K10206",Oleococcus
+M00982,14.29,Methylcitrate cycle,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01677,K01678","K00024,K00239,K00240,K00241,K01659,K01682,K01720,K03417",Oleococcus
+M00114,12.5,"Ascorbate biosynthesis, plants, fructose-6P => ascorbate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00966,"K00225,K01809,K10046,K10047,K14190,K17497,K17744",Oleococcus
+M00897,12.5,"Thiamine biosynthesis, plants, AIR (+ NAD+) => TMP/thiamine/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K03147,"K00949,K03146,K14153,K22911",Oleococcus
+M00016,11.11,"Lysine biosynthesis, succinyl-DAP pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,K01714,"K00133,K00215,K00674,K00821,K00928,K01439,K01586,K01778",Oleococcus
+M00376,11.11,3-Hydroxypropionate bi-cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01847,K05606","K00239,K00240,K00241,K01679,K01961,K01962,K01963,K02160,K08691,K09709,K14449,K14468,K14469,K14470,K14471,K14472,K15052",Oleococcus
+M00525,11.11,"Lysine biosynthesis, acetyl-DAP pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,K01714,"K00133,K00215,K00841,K00928,K01586,K01778,K05822,K05823",Oleococcus
+M00121,10.0,"Heme biosynthesis, plants and bacteria, glutamate => heme",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00230,"K00228,K01599,K01698,K01719,K01749,K01772,K01845,K01885,K02492",Oleococcus
+M00126,10.0,"Tetrahydrofolate biosynthesis, GTP => THF",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00796,"K00287,K01077,K01495,K11754,K13940",Oleococcus
+M00144,9.09,NADH,Pathway modules; Energy metabolism; ATP synthesis,K00343,"K00330,K00331,K00332,K00333,K00334,K00335,K00336,K00337,K00338,K00339,K00340,K00341,K00342",Oleococcus
+M00122,8.33,"Cobalamin biosynthesis, cobyrinate a,c-diamide => cobalamin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00798,"K00768,K02225,K02226,K02231,K02232,K02233",Oleococcus
+M00055,7.69,N-glycan precursor biosynthesis,Pathway modules; Glycan metabolism; Glycan biosynthesis,K01001,"K00729,K03842,K03843,K03844,K03845,K03846,K03847,K03848,K03849,K03850,K07432,K07441",Oleococcus
+M00569,6.67,"Catechol meta-cleavage, catechol => acetyl-CoA / 4-methylcatechol => propanoyl-CoA",Pathway modules; Xenobiotics biodegradation; Aromatics degradation,K01821,"K00446,K01617,K10217,K18364,K18365,K18366",Oleococcus
+M00026,5.56,"Histidine biosynthesis, PRPP => histidine",Pathway modules; Amino acid metabolism; Histidine metabolism,"K02502,K04486","K00013,K00765,K00817,K01496,K01523,K01693,K01814,K02500,K02501",Oleococcus
+M00117,5.56,"Ubiquinone biosynthesis, prokaryotes, chorismate (+ polyprenyl-PP) => ubiquinol",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K03186,"K00568,K03179,K03181,K03182,K03183,K03184,K03185,K18800",Oleococcus
+M00001,100.0,"Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00918,K00927,K01689,K01803,K01834,K06859,K11645",,Palaeococcus
+M00002,100.0,"Glycolysis, core module involving three-carbon compounds",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00927,K01689,K01803,K01834",,Palaeococcus
+M00003,100.0,"Gluconeogenesis, oxaloacetate => fructose-6P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00927,K01596,K01622,K01689,K01803,K01834",,Palaeococcus
+M00005,100.0,"PRPP biosynthesis, ribose 5P => PRPP",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K00948,,Palaeococcus
+M00048,100.0,"De novo purine biosynthesis, PRPP + glutamine => IMP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00764,K01756,K01923,K01933,K01945,K06863,K08289,K11176,K23264,K23265,K23269",,Palaeococcus
+M00049,100.0,"Adenine ribonucleotide biosynthesis, IMP => ADP,ATP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00939,K00940,K01756,K01939",,Palaeococcus
+M00052,100.0,"Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00940,K01937,K09903",,Palaeococcus
+M00091,100.0,"Phosphatidylcholine (PC) biosynthesis, PE => PC",Pathway modules; Lipid metabolism; Lipid metabolism,K00570,,Palaeococcus
+M00133,100.0,"Polyamine biosynthesis, arginine => agmatine => putrescine => spermidine",Pathway modules; Amino acid metabolism; Polyamine biosynthesis,"K00797,K01480,K01611,K02626",,Palaeococcus
+M00159,100.0,"V/A-type ATPase, prokaryotes",Pathway modules; Energy metabolism; ATP synthesis,"K02107,K02117,K02118,K02119,K02120,K02121,K02122,K02123,K02124",,Palaeococcus
+M00307,100.0,"Pyruvate oxidation, pyruvate => acetyl-CoA",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00169,K00170,K00171,K00172",,Palaeococcus
+M00338,100.0,"Cysteine biosynthesis, homocysteine + serine => cysteine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K01697,K01758",,Palaeococcus
+M00580,100.0,"Pentose phosphate pathway, archaea, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K08093,K08094",,Palaeococcus
+M00793,100.0,dTDP-L-rhamnose biosynthesis,Pathway modules; Biosynthesis of terpenoids and polyketides; Polyketide sugar unit biosynthesis,"K00067,K00973,K01710,K01790",,Palaeococcus
+M00844,100.0,"Arginine biosynthesis, ornithine => arginine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K00611,K01755,K01940",,Palaeococcus
+M00854,100.0,"Glycogen biosynthesis, glucose-1P => glycogen/starch",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00963,K20812",,Palaeococcus
+M00880,100.0,"Molybdenum cofactor biosynthesis, GTP => molybdenum cofactor",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K03635,K03637,K03638,K03639,K03750",,Palaeococcus
+M00896,100.0,"Thiamine biosynthesis, archaea, AIR (+ NAD+) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K00946,K03147,K22699",,Palaeococcus
+M00899,100.0,"Thiamine salvage pathway, HMP/HET => TMP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00878,K00941",,Palaeococcus
+M00916,100.0,"Pyridoxal-P biosynthesis, R5P + glyceraldehyde-3P + glutamine => pyridoxal-P",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K06215,K08681",,Palaeococcus
+M00968,100.0,"Pentose bisphosphate pathway (nucleoside degradation), archaea, nucleoside/NMP => 3-PGA/glycerone phosphate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01601,K18237,K18931",,Palaeococcus
+M00986,100.0,"Sulfur reduction, sulfur => sulfide",Pathway modules; Energy metabolism; Sulfur metabolism,K18367,,Palaeococcus
+M00914,85.71,"Coenzyme A biosynthesis, archaea, 2-oxoisovalerate => 4-phosphopantoate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606,K06982,K09722,K09735,K13038",K02201,Palaeococcus
+M00741,83.33,"Propanoyl-CoA metabolism, propanoyl-CoA => succinyl-CoA",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K01966,K05606",K01965,Palaeococcus
+M00022,81.25,"Shikimate pathway, phosphoenolpyruvate + erythrose-4P => chorismate",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,"K00014,K00800,K01735,K01736,K03856","K00891,K03785",Palaeococcus
+M00018,80.0,"Threonine biosynthesis, aspartate => homoserine => threonine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00003,K00133,K00872,K01733",K00928,Palaeococcus
+M00031,80.0,"Lysine biosynthesis, mediated by LysW, 2-aminoadipate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,"K05826,K05828,K05829,K05831","K05827,K05830",Palaeococcus
+M00763,80.0,"Ornithine biosynthesis, mediated by LysW, glutamate => ornithine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K05826,K05828,K05829,K05831","K05830,K19412",Palaeococcus
+M00051,77.78,"De novo pyrimidine biosynthesis, glutamine (+ PRPP) => UMP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00609,K00610,K00762,K01591,K17828","K01465,K01954",Palaeococcus
+M00125,77.78,"Riboflavin biosynthesis, plants and bacteria, GTP => riboflavin/FMN/FAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00793,K00794,K11752,K14652","K20884,K22912,K22949",Palaeococcus
+M00026,75.0,"Histidine biosynthesis, PRPP => histidine",Pathway modules; Amino acid metabolism; Histidine metabolism,"K00765,K00817,K01814,K02500,K02501,K02502,K11755","K00013,K01089",Palaeococcus
+M00035,75.0,Methionine degradation,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00789,K01251,K01697",K00552,Palaeococcus
+M00050,75.0,"Guanine ribonucleotide biosynthesis, IMP => GDP,GTP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00088,K00940,K01951",K00942,Palaeococcus
+M00053,75.0,"Deoxyribonucleotide biosynthesis, ADP/GDP/CDP/UDP => dATP/dGTP/dCTP/dUTP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00525,K00940",K00526,Palaeococcus
+M00017,71.43,"Methionine biosynthesis, aspartate => homoserine => methionine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00003,K00133,K00549,K01739,K01760","K00651,K00928",Palaeococcus
+M00938,70.0,"Pyrimidine deoxyribonucleotide biosynthesis, UDP => dTTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00525,K00940,K00943,K03465","K00526,K01520",Palaeococcus
+M00020,66.67,"Serine biosynthesis, glycerate-3P => serine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00058,K01079",K00831,Palaeococcus
+M00621,66.67,Glycine cleavage system,Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00282,K00283,K00605",K00382,Palaeococcus
+M00978,66.67,Ornithine-ammonia cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K00611,K01755,K01915,K01940","K01955,K01956,K27542",Palaeococcus
+M00034,62.5,Methionine salvage pathway,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00772,K00789,K00797,K01611,K08963","K00815,K08967,K16054",Palaeococcus
+M00029,60.0,Urea cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K00611,K01755,K01940","K01476,K01948",Palaeococcus
+M00115,60.0,"NAD biosynthesis, aspartate => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00767,K01916,K03517","K00278,K00969",Palaeococcus
+M00122,58.33,"Cobalamin biosynthesis, cobyrinate a,c-diamide => cobalamin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00798,K02227,K02232,K02233","K00768,K02226,K02231",Palaeococcus
+M00127,58.33,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/tyrosine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K00946,K03147,K03151,K03154","K03148,K03149,K03150",Palaeococcus
+M00895,58.33,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/glycine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K00946,K03147,K03151,K03154","K03148,K03149,K03153,K10810",Palaeococcus
+M00015,50.0,"Proline biosynthesis, glutamate => proline",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00286,"K00147,K00931",Palaeococcus
+M00098,50.0,Acylglycerol degradation,Pathway modules; Lipid metabolism; Lipid metabolism,K01054,K01046,Palaeococcus
+M00120,50.0,"Coenzyme A biosynthesis, pantothenate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00859,K13038","K00867,K00954",Palaeococcus
+M00141,50.0,"C1-unit interconversion, eukaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,K00288,Palaeococcus
+M00168,50.0,"CAM (Crassulacean acid metabolism), dark",Pathway modules; Energy metabolism; Carbon fixation,K01595,K00025,Palaeococcus
+M00364,50.0,"C10-C20 isoprenoid biosynthesis, bacteria",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K13787,K01823,Palaeococcus
+M00365,50.0,"C10-C20 isoprenoid biosynthesis, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K13787,K01823,Palaeococcus
+M00554,50.0,"Nucleotide sugar biosynthesis, galactose => UDP-galactose",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00965,K00849,Palaeococcus
+M00620,50.0,"Incomplete reductive citrate cycle, acetyl-CoA => oxoglutarate",Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177,K01677,K01678,K01960","K00024,K01902,K01903,K01959,K18209,K18210",Palaeococcus
+M00632,50.0,"Galactose degradation, Leloir pathway, galactose => alpha-D-glucose-1P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00965,K01784","K00849,K01785",Palaeococcus
+M00849,50.0,"C5 isoprenoid biosynthesis, mevalonate pathway, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869,K03186,K06981,K09128,K25517,K25518","K00626,K01641,K01823",Palaeococcus
+M00855,50.0,"Glycogen degradation, glycogen => glucose-6P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00688,K22451","K02438,K15779",Palaeococcus
+M00165,45.45,Reductive pentose phosphate cycle (Calvin cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00150,K00927,K01601,K01803,K01807","K00615,K00855,K01100,K01623,K01783,K03841",Palaeococcus
+M00346,44.44,"Formaldehyde assimilation, serine pathway",Pathway modules; Energy metabolism; Methane metabolism,"K00600,K01595,K01689,K11529","K00018,K00024,K00830,K08691,K08692,K14067",Palaeococcus
+M00845,42.86,"Arginine biosynthesis, glutamate => acetylcitrulline => arginine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K00145,K01755,K01940","K00821,K01438,K09065,K22478",Palaeococcus
+M00373,41.67,Ethylmalonyl pathway,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K01966,K05606","K00023,K00626,K01965,K08691,K14446,K14447,K14448,K14449,K14451,K17865",Palaeococcus
+M00011,40.0,"Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177,K01677,K01678","K00026,K00234,K00235,K00236,K00237,K01902,K01903",Palaeococcus
+M00173,40.0,Reductive citrate cycle (Arnon-Buchanan cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177,K01007,K01595,K01677,K01678","K00024,K00031,K00239,K00240,K01681,K01902,K01903,K15230,K15231",Palaeococcus
+M00909,40.0,"UDP-N-acetyl-D-glucosamine biosynthesis, prokaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00820,K03431","K00845,K01810,K04042",Palaeococcus
+M00912,37.5,"NAD biosynthesis, tryptophan => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00767,K01916,K07130","K00452,K00453,K00486,K00969,K01556",Palaeococcus
+M00532,36.11,Photorespiration,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00600,K00605,K01601,K02437","K00281,K00382,K00830,K03781,K11517,K14272,K15893,K15918,K19269",Palaeococcus
+M00123,33.33,"Biotin biosynthesis, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01935",Palaeococcus
+M00140,33.33,"C1-unit interconversion, prokaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,"K01491,K01938",Palaeococcus
+M00309,33.33,"Non-phosphorylative Entner-Doudoroff pathway, gluconate/galactonate => glycerate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K03738,"K05308,K11395",Palaeococcus
+M00345,33.33,"Formaldehyde assimilation, ribulose monophosphate pathway",Pathway modules; Energy metabolism; Methane metabolism,"K08093,K08094","K00850,K01624",Palaeococcus
+M00368,33.33,"Ethylene biosynthesis, methionine => ethylene",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00789,"K01762,K05933",Palaeococcus
+M00526,33.33,"Lysine biosynthesis, DAP dehydrogenase pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,"K00133,K01714","K00215,K00928,K01586,K03340",Palaeococcus
+M00549,33.33,"Nucleotide sugar biosynthesis, glucose => UDP-glucose",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00963,"K00844,K01835",Palaeococcus
+M00565,33.33,"Trehalose biosynthesis, D-glucose 1P => trehalose",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00703,K16149","K00975,K01214,K01236,K06044",Palaeococcus
+M00609,33.33,"Cysteine biosynthesis, methionine => cysteine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00789,K17462","K01243,K07173,K17216,K17217",Palaeococcus
+M00627,33.33,"beta-Lactam resistance, Bla system",Signature modules; Gene set; Drug resistance,K02171,"K02172,K18766",Palaeococcus
+M00842,33.33,"Tetrahydrobiopterin biosynthesis, GTP => BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K00072,K01495",Palaeococcus
+M00843,33.33,"L-threo-Tetrahydrobiopterin biosynthesis, GTP => L-threo-BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K01495,K17745",Palaeococcus
+M00913,33.33,"Pantothenate biosynthesis, 2-oxoisovalerate/spermine => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00128,K01918,K13367",Palaeococcus
+M00972,33.33,Proline metabolism,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00286,"K00318,K00819",Palaeococcus
+M00374,30.77,Dicarboxylate-hydroxybutyrate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K01007,K01595,K01677,K01678","K00024,K00239,K00240,K00626,K01902,K01903,K14465,K14467,K14534,K15016,K15038",Palaeococcus
+M00095,28.57,"C5 isoprenoid biosynthesis, mevalonate pathway",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869","K00626,K00938,K01597,K01641,K01823",Palaeococcus
+M00129,28.57,"Ascorbate biosynthesis, animals, glucose-1P => ascorbate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00012,K00963","K00002,K00103,K00699,K01053,K01195",Palaeococcus
+M00527,28.57,"Lysine biosynthesis, DAP aminotransferase pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,"K00133,K01714","K00215,K00928,K01586,K01778,K10206",Palaeococcus
+M00144,27.27,NADH,Pathway modules; Energy metabolism; ATP synthesis,"K00334,K00335,K00343","K00330,K00331,K00332,K00333,K00336,K00337,K00338,K00339,K00340,K00341,K00342",Palaeococcus
+M00004,25.0,Pentose phosphate pathway (Pentose phosphate cycle),Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K06859","K00033,K00615,K00616,K01783,K13937",Palaeococcus
+M00007,25.0,"Pentose phosphate pathway, non-oxidative phase, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K01807,"K00615,K00616,K01783",Palaeococcus
+M00009,25.0,"Citrate cycle (TCA cycle, Krebs cycle)",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177,K01677,K01678","K00026,K00031,K00234,K00235,K00236,K00237,K01647,K01681,K01902,K01903",Palaeococcus
+M00083,25.0,"Fatty acid biosynthesis, elongation",Pathway modules; Lipid metabolism; Fatty acid metabolism,K00059,"K00208,K00647,K02372",Palaeococcus
+M00170,25.0,"C4-dicarboxylic acid cycle, phosphoenolpyruvate carboxykinase type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K01610,K14454,K14455",Palaeococcus
+M00172,25.0,"C4-dicarboxylic acid cycle, NADP - malic enzyme type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K00029,K00051,K01006",Palaeococcus
+M00308,25.0,"Semi-phosphorylative Entner-Doudoroff pathway, gluconate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K18978,"K00874,K01625,K05308",Palaeococcus
+M00358,25.0,Coenzyme M biosynthesis,Pathway modules; Energy metabolism; Methane metabolism,K05884,"K05979,K06034,K08097,K13039",Palaeococcus
+M00596,25.0,"Dissimilatory sulfate reduction, sulfate => H2S",Pathway modules; Energy metabolism; Sulfur metabolism,K00958,"K00394,K00395,K11180,K11181,K27187,K27188,K27189,K27190,K27191",Palaeococcus
+M00633,25.0,"Semi-phosphorylative Entner-Doudoroff pathway, gluconate/galactonate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K18978,"K05308,K11395,K18126",Palaeococcus
+M00888,25.0,"Galactofuranan biosynthesis, decaprenyl phosphate + UDP-GlcNAc (+ dTDP-Rha/UDP-Galf) => GL-5",Pathway modules; Glycan metabolism; Other polysaccharide metabolism,K16870,"K02851,K16649,K16650",Palaeococcus
+M00921,25.0,"Cyclooctatin biosynthesis, dimethylallyl-PP + isopentenyl-PP => cyclooctatin",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of other bacterial compounds,K13787,"K18686,K22997,K22998",Palaeococcus
+M00950,25.0,"Biotin biosynthesis, BioU pathway, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K25570",Palaeococcus
+M00959,25.0,"Guanine ribonucleotide degradation, GMP => Urate",Pathway modules; Nucleotide metabolism; Purine metabolism,K01487,"K00106,K01081,K03783",Palaeococcus
+M00975,25.0,"Betaine degradation, bacteria, betaine => pyruvate",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,K00600,"K00301,K00309,K00479,K01752,K21832",Palaeococcus
+M00016,22.22,"Lysine biosynthesis, succinyl-DAP pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,"K00133,K01714","K00215,K00674,K00821,K00928,K01439,K01586,K01778",Palaeococcus
+M00119,22.22,"Pantothenate biosynthesis, valine/L-aspartate => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00826,K01579,K01918",Palaeococcus
+M00525,22.22,"Lysine biosynthesis, acetyl-DAP pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,"K00133,K01714","K00215,K00841,K00928,K01586,K01778,K05822,K05823",Palaeococcus
+M00033,20.0,"Ectoine biosynthesis, aspartate => ectoine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,K00133,"K00836,K00928,K06718,K06720",Palaeococcus
+M00059,20.0,"Glycosaminoglycan biosynthesis, heparan sulfate backbone",Pathway modules; Glycan metabolism; Glycosaminoglycan metabolism,K01793,"K02366,K02368,K02369,K02576",Palaeococcus
+M00552,20.0,"D-galactonate degradation, De Ley-Doudoroff pathway, D-galactonate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00927,"K00134,K00883,K01631,K01684",Palaeococcus
+M00573,20.0,"Biotin biosynthesis, BioI pathway, long-chain-acyl-ACP => pimeloyl-ACP => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K16593,K19563",Palaeococcus
+M00577,20.0,"Biotin biosynthesis, BioW pathway, pimelate => pimeloyl-CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01906,K01935",Palaeococcus
+M00953,20.0,"Mugineic acid biosynthesis, methionine => 3-epihydroxymugineic acid",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of phytochemical compounds,K00789,"K05953,K14271,K18054,K22374",Palaeococcus
+M00911,18.18,"Riboflavin biosynthesis, fungi, GTP => riboflavin/FMN/FAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00793,K00794","K00861,K00953,K01497,K02858,K14654,K14655",Palaeococcus
+M00023,16.67,"Tryptophan biosynthesis, chorismate => tryptophan",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,K06001,"K00766,K01656,K01657,K01658,K01695,K01817",Palaeococcus
+M00176,16.67,"Assimilatory sulfate reduction, sulfate => H2S",Pathway modules; Energy metabolism; Sulfur metabolism,K00958,"K00390,K00392,K00860",Palaeococcus
+M00432,16.67,"Leucine biosynthesis, 2-oxoisovalerate => 2-oxoisocaproate",Pathway modules; Amino acid metabolism; Branched-chain amino acid metabolism,K01704,"K00052,K01649,K01703",Palaeococcus
+M00535,16.67,"Isoleucine biosynthesis, pyruvate => 2-oxobutanoate",Pathway modules; Amino acid metabolism; Branched-chain amino acid metabolism,K01704,"K00052,K01703,K09011",Palaeococcus
+M00572,16.67,"Pimeloyl-ACP biosynthesis, BioC-BioH pathway, malonyl-ACP => pimeloyl-ACP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00059,"K00208,K00647,K02169,K02170,K02372",Palaeococcus
+M00622,16.67,"Nicotinate degradation, nicotinate => fumarate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01799,"K13995,K14974,K15357,K18028,K18029,K18030",Palaeococcus
+M00840,16.67,"Tetrahydrofolate biosynthesis, mediated by ribA and trpF, GTP => THF",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K14652,"K00287,K01633,K13941,K22099,K22100",Palaeococcus
+M00874,16.67,"Fatty acid biosynthesis in mitochondria, fungi",Pathway modules; Lipid metabolism; Fatty acid metabolism,K00059,"K00645,K03955,K07512,K09458,K11262,K22541",Palaeococcus
+M00892,16.67,"UDP-N-acetyl-D-glucosamine biosynthesis, eukaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00820,"K00621,K00844,K00972,K01810,K01836",Palaeococcus
+M00935,16.67,Methanofuran biosynthesis,Pathway modules; Energy metabolism; Methane metabolism,K18933,"K06914,K07072,K07144,K09733,K19793",Palaeococcus
+M00014,14.29,Glucuronate pathway (uronate pathway),Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00012,"K00002,K00854,K03331,K05351,K12447,K13247,K16190",Palaeococcus
+M00038,14.29,"Tryptophan metabolism, tryptophan => kynurenine => 2-aminomuconate",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,K07130,"K00452,K00453,K00486,K01556,K03392,K10217",Palaeococcus
+M00171,14.29,"C4-dicarboxylic acid cycle, NAD - malic enzyme type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K00025,K00028,K00814,K01006,K14454,K14455",Palaeococcus
+M00375,14.29,Hydroxypropionate-hydroxybutylate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01848,K01849,K05606","K00626,K01964,K14465,K14466,K14534,K15016,K15017,K15018,K15019,K15020,K15036,K15037,K15038,K15039",Palaeococcus
+M00835,14.29,"Pyocyanine biosynthesis, chorismate => pyocyanine",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of other bacterial compounds,K06998,"K13063,K20260,K20261,K20262,K20940,K21103",Palaeococcus
+M00982,14.29,Methylcitrate cycle,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01677,K01678","K00024,K00239,K00240,K00241,K01659,K01682,K01720,K03417",Palaeococcus
+M00028,12.5,"Ornithine biosynthesis, glutamate => ornithine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00145,"K00618,K00818,K00930,K01438",Palaeococcus
+M00114,12.5,"Ascorbate biosynthesis, plants, fructose-6P => ascorbate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00966,"K00225,K01809,K10046,K10047,K14190,K17497,K17744",Palaeococcus
+M00897,12.5,"Thiamine biosynthesis, plants, AIR (+ NAD+) => TMP/thiamine/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K03147,"K00949,K03146,K14153,K22911",Palaeococcus
+M00376,11.11,3-Hydroxypropionate bi-cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01847,K05606","K00239,K00240,K00241,K01679,K01961,K01962,K01963,K02160,K08691,K09709,K14449,K14468,K14469,K14470,K14471,K14472,K15052",Palaeococcus
+M00121,10.0,"Heme biosynthesis, plants and bacteria, glutamate => heme",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00230,"K00228,K01599,K01698,K01719,K01749,K01772,K01845,K01885,K02492",Palaeococcus
+M00126,10.0,"Tetrahydrofolate biosynthesis, GTP => THF",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00796,"K00287,K01077,K01495,K11754,K13940",Palaeococcus
+M00055,7.69,N-glycan precursor biosynthesis,Pathway modules; Glycan metabolism; Glycan biosynthesis,K01001,"K00729,K03842,K03843,K03844,K03845,K03846,K03847,K03848,K03849,K03850,K07432,K07441",Palaeococcus
+M00569,6.67,"Catechol meta-cleavage, catechol => acetyl-CoA / 4-methylcatechol => propanoyl-CoA",Pathway modules; Xenobiotics biodegradation; Aromatics degradation,K01821,"K00446,K01617,K10217,K18364,K18365,K18366",Palaeococcus
+M00117,5.56,"Ubiquinone biosynthesis, prokaryotes, chorismate (+ polyprenyl-PP) => ubiquinol",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K03186,"K00568,K03179,K03181,K03182,K03183,K03184,K03185,K18800",Palaeococcus
+M00356,3.33,"Methanogenesis, methanol => methane",Pathway modules; Energy metabolism; Methane metabolism,K22516,"K00125,K00399,K00401,K00402,K03388,K03389,K03390,K04480,K14080,K14081,K14127",Palaeococcus
+M00925,3.03,"Cobalamin biosynthesis, aerobic, uroporphyrinogen III => precorrin 2 => cobyrinate a,c-diamide",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K02230,"K00595,K02224,K02228,K02229,K02303,K03394,K05895,K05934,K05936,K06042,K09882,K09883",Palaeococcus
+M00563,2.5,"Methanogenesis, methylamine/dimethylamine/trimethylamine => methane",Pathway modules; Energy metabolism; Methane metabolism,K22516,"K00125,K00399,K00401,K00402,K03388,K03389,K03390,K14082,K14127,K16177",Palaeococcus
+M00357,2.0,"Methanogenesis, acetate => methane",Pathway modules; Energy metabolism; Methane metabolism,K22516,"K00125,K00193,K00194,K00197,K00399,K00401,K00402,K00577,K00578,K00579,K00580,K00581,K00584,K00625,K00925,K03388,K03389,K03390,K14127",Palaeococcus
+M00567,1.25,"Methanogenesis, CO2 => methane",Pathway modules; Energy metabolism; Methane metabolism,"K11261,K22516","K00125,K00200,K00201,K00202,K00203,K00205,K00319,K00320,K00399,K00401,K00402,K00577,K00578,K00579,K00580,K00581,K00584,K00672,K01499,K03388,K03389,K03390,K14127",Palaeococcus
+M00001,100.0,"Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00918,K00927,K01689,K01803,K01834,K06859,K11645",,Piezococcus
+M00002,100.0,"Glycolysis, core module involving three-carbon compounds",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00927,K01689,K01803,K01834",,Piezococcus
+M00003,100.0,"Gluconeogenesis, oxaloacetate => fructose-6P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00927,K01596,K01622,K01689,K01803,K01834",,Piezococcus
+M00005,100.0,"PRPP biosynthesis, ribose 5P => PRPP",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K00948,,Piezococcus
+M00035,100.0,Methionine degradation,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00558,K00789,K01251,K01697",,Piezococcus
+M00049,100.0,"Adenine ribonucleotide biosynthesis, IMP => ADP,ATP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00939,K00940,K01756,K01939",,Piezococcus
+M00052,100.0,"Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00940,K01937,K09903",,Piezococcus
+M00091,100.0,"Phosphatidylcholine (PC) biosynthesis, PE => PC",Pathway modules; Lipid metabolism; Lipid metabolism,K00570,,Piezococcus
+M00133,100.0,"Polyamine biosynthesis, arginine => agmatine => putrescine => spermidine",Pathway modules; Amino acid metabolism; Polyamine biosynthesis,"K00797,K01480,K01611,K02626",,Piezococcus
+M00159,100.0,"V/A-type ATPase, prokaryotes",Pathway modules; Energy metabolism; ATP synthesis,"K02107,K02117,K02118,K02119,K02120,K02121,K02122,K02123,K02124",,Piezococcus
+M00307,100.0,"Pyruvate oxidation, pyruvate => acetyl-CoA",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00169,K00170,K00171,K00172",,Piezococcus
+M00338,100.0,"Cysteine biosynthesis, homocysteine + serine => cysteine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K01697,K01758",,Piezococcus
+M00554,100.0,"Nucleotide sugar biosynthesis, galactose => UDP-galactose",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00849,K00965",,Piezococcus
+M00580,100.0,"Pentose phosphate pathway, archaea, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K08093,K08094",,Piezococcus
+M00880,100.0,"Molybdenum cofactor biosynthesis, GTP => molybdenum cofactor",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K03635,K03637,K03638,K03639,K03750",,Piezococcus
+M00899,100.0,"Thiamine salvage pathway, HMP/HET => TMP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00878,K00941",,Piezococcus
+M00968,100.0,"Pentose bisphosphate pathway (nucleoside degradation), archaea, nucleoside/NMP => 3-PGA/glycerone phosphate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00757,K01601,K18237,K21056",,Piezococcus
+M00986,100.0,"Sulfur reduction, sulfur => sulfide",Pathway modules; Energy metabolism; Sulfur metabolism,K18367,,Piezococcus
+M00914,85.71,"Coenzyme A biosynthesis, archaea, 2-oxoisovalerate => 4-phosphopantoate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606,K06982,K09722,K09735,K13038",K02201,Piezococcus
+M00022,81.25,"Shikimate pathway, phosphoenolpyruvate + erythrose-4P => chorismate",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,"K00014,K00800,K01735,K01736,K03856","K00891,K03785",Piezococcus
+M00018,80.0,"Threonine biosynthesis, aspartate => homoserine => threonine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00003,K00133,K00872,K01733",K00928,Piezococcus
+M00051,77.78,"De novo pyrimidine biosynthesis, glutamine (+ PRPP) => UMP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00609,K00610,K00762,K01591,K17828","K01465,K01954",Piezococcus
+M00026,75.0,"Histidine biosynthesis, PRPP => histidine",Pathway modules; Amino acid metabolism; Histidine metabolism,"K00765,K00817,K01814,K02500,K02501,K02502,K11755","K00013,K01089",Piezococcus
+M00053,75.0,"Deoxyribonucleotide biosynthesis, ADP/GDP/CDP/UDP => dATP/dGTP/dCTP/dUTP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00525,K00940",K00526,Piezococcus
+M00632,75.0,"Galactose degradation, Leloir pathway, galactose => alpha-D-glucose-1P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00849,K00965,K01784",K01785,Piezococcus
+M00854,75.0,"Glycogen biosynthesis, glucose-1P => glycogen/starch",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00703,K16149",K00975,Piezococcus
+M00938,70.0,"Pyrimidine deoxyribonucleotide biosynthesis, UDP => dTTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00525,K00940,K00943,K03465","K00526,K01520",Piezococcus
+M00020,66.67,"Serine biosynthesis, glycerate-3P => serine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00058,K01079",K00831,Piezococcus
+M00621,66.67,Glycine cleavage system,Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00282,K00283,K00605",K00382,Piezococcus
+M00741,66.67,"Propanoyl-CoA metabolism, propanoyl-CoA => succinyl-CoA",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K05606","K01965,K01966",Piezococcus
+M00034,62.5,Methionine salvage pathway,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00772,K00789,K00797,K01611,K08963","K00815,K08967,K16054",Piezococcus
+M00122,58.33,"Cobalamin biosynthesis, cobyrinate a,c-diamide => cobalamin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00798,K02227,K02232,K02233","K00768,K02226,K02231",Piezococcus
+M00017,57.14,"Methionine biosynthesis, aspartate => homoserine => methionine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00003,K00133,K01739,K01760","K00548,K00651,K00928",Piezococcus
+M00015,50.0,"Proline biosynthesis, glutamate => proline",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00286,"K00147,K00931",Piezococcus
+M00050,50.0,"Guanine ribonucleotide biosynthesis, IMP => GDP,GTP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00088,K00940","K00942,K01951",Piezococcus
+M00098,50.0,Acylglycerol degradation,Pathway modules; Lipid metabolism; Lipid metabolism,K01054,K01046,Piezococcus
+M00120,50.0,"Coenzyme A biosynthesis, pantothenate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00859,K13038","K00867,K00954",Piezococcus
+M00141,50.0,"C1-unit interconversion, eukaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,K00288,Piezococcus
+M00168,50.0,"CAM (Crassulacean acid metabolism), dark",Pathway modules; Energy metabolism; Carbon fixation,K01595,K00025,Piezococcus
+M00364,50.0,"C10-C20 isoprenoid biosynthesis, bacteria",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K13787,K01823,Piezococcus
+M00365,50.0,"C10-C20 isoprenoid biosynthesis, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K13787,K01823,Piezococcus
+M00620,50.0,"Incomplete reductive citrate cycle, acetyl-CoA => oxoglutarate",Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177,K01677,K01678,K01960","K00024,K01902,K01903,K01959,K18209,K18210",Piezococcus
+M00849,50.0,"C5 isoprenoid biosynthesis, mevalonate pathway, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869,K03186,K06981,K09128,K25517,K25518","K00626,K01641,K01823",Piezococcus
+M00855,50.0,"Glycogen degradation, glycogen => glucose-6P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00688,K22451","K02438,K15779",Piezococcus
+M00895,50.0,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/glycine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K00946,K03151,K03154","K03147,K03148,K03149,K03153,K10810",Piezococcus
+M00127,47.22,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/tyrosine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K00946,K03151,K03154","K03147,K03148,K03149,K03150",Piezococcus
+M00165,45.45,Reductive pentose phosphate cycle (Calvin cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00150,K00927,K01601,K01803,K01807","K00615,K00855,K01100,K01623,K01783,K03841",Piezococcus
+M00346,44.44,"Formaldehyde assimilation, serine pathway",Pathway modules; Energy metabolism; Methane metabolism,"K00600,K01595,K01689,K11529","K00018,K00024,K00830,K08691,K08692,K14067",Piezococcus
+M00048,43.75,"De novo purine biosynthesis, PRPP + glutamine => IMP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K01756,K01945,K06863,K23264,K23265,K23269","K00601,K00764,K01923,K01933,K11176",Piezococcus
+M00011,40.0,"Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177,K01677,K01678","K00026,K00234,K00235,K00236,K00237,K01902,K01903",Piezococcus
+M00173,40.0,Reductive citrate cycle (Arnon-Buchanan cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177,K01007,K01595,K01677,K01678","K00024,K00031,K00239,K00240,K01681,K01902,K01903,K15230,K15231",Piezococcus
+M00909,40.0,"UDP-N-acetyl-D-glucosamine biosynthesis, prokaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00820,K03431","K00845,K01810,K04042",Piezococcus
+M00532,36.11,Photorespiration,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00600,K00605,K01601,K02437","K00281,K00382,K00830,K03781,K11517,K14272,K15893,K15918,K19269",Piezococcus
+M00123,33.33,"Biotin biosynthesis, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01935",Piezococcus
+M00140,33.33,"C1-unit interconversion, prokaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,"K01491,K01938",Piezococcus
+M00309,33.33,"Non-phosphorylative Entner-Doudoroff pathway, gluconate/galactonate => glycerate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K03738,"K05308,K11395",Piezococcus
+M00345,33.33,"Formaldehyde assimilation, ribulose monophosphate pathway",Pathway modules; Energy metabolism; Methane metabolism,"K08093,K08094","K00850,K01624",Piezococcus
+M00368,33.33,"Ethylene biosynthesis, methionine => ethylene",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00789,"K01762,K05933",Piezococcus
+M00373,33.33,Ethylmalonyl pathway,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K05606","K00023,K00626,K01965,K01966,K08691,K14446,K14447,K14448,K14449,K14451,K17865",Piezococcus
+M00526,33.33,"Lysine biosynthesis, DAP dehydrogenase pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,"K00133,K01714","K00215,K00928,K01586,K03340",Piezococcus
+M00565,33.33,"Trehalose biosynthesis, D-glucose 1P => trehalose",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00703,K16149","K00975,K01214,K01236,K06044",Piezococcus
+M00627,33.33,"beta-Lactam resistance, Bla system",Signature modules; Gene set; Drug resistance,K02171,"K02172,K18766",Piezococcus
+M00842,33.33,"Tetrahydrobiopterin biosynthesis, GTP => BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K00072,K01495",Piezococcus
+M00843,33.33,"L-threo-Tetrahydrobiopterin biosynthesis, GTP => L-threo-BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K01495,K17745",Piezococcus
+M00844,33.33,"Arginine biosynthesis, ornithine => arginine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00611,"K01755,K01940",Piezococcus
+M00896,33.33,"Thiamine biosynthesis, archaea, AIR (+ NAD+) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K00946","K03147,K22699",Piezococcus
+M00913,33.33,"Pantothenate biosynthesis, 2-oxoisovalerate/spermine => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00128,K01918,K13367",Piezococcus
+M00972,33.33,Proline metabolism,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00286,"K00318,K00819",Piezococcus
+M00978,33.33,Ornithine-ammonia cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K00611,K01915","K01755,K01940,K01955,K01956,K27542",Piezococcus
+M00374,30.77,Dicarboxylate-hydroxybutyrate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K01007,K01595,K01677,K01678","K00024,K00239,K00240,K00626,K01902,K01903,K14465,K14467,K14534,K15016,K15038",Piezococcus
+M00095,28.57,"C5 isoprenoid biosynthesis, mevalonate pathway",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869","K00626,K00938,K01597,K01641,K01823",Piezococcus
+M00527,28.57,"Lysine biosynthesis, DAP aminotransferase pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,"K00133,K01714","K00215,K00928,K01586,K01778,K10206",Piezococcus
+M00004,25.0,Pentose phosphate pathway (Pentose phosphate cycle),Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K06859","K00033,K00615,K00616,K01783,K13937",Piezococcus
+M00007,25.0,"Pentose phosphate pathway, non-oxidative phase, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K01807,"K00615,K00616,K01783",Piezococcus
+M00009,25.0,"Citrate cycle (TCA cycle, Krebs cycle)",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177,K01677,K01678","K00026,K00031,K00234,K00235,K00236,K00237,K01647,K01681,K01902,K01903",Piezococcus
+M00083,25.0,"Fatty acid biosynthesis, elongation",Pathway modules; Lipid metabolism; Fatty acid metabolism,K00059,"K00208,K00647,K02372",Piezococcus
+M00170,25.0,"C4-dicarboxylic acid cycle, phosphoenolpyruvate carboxykinase type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K01610,K14454,K14455",Piezococcus
+M00172,25.0,"C4-dicarboxylic acid cycle, NADP - malic enzyme type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K00029,K00051,K01006",Piezococcus
+M00358,25.0,Coenzyme M biosynthesis,Pathway modules; Energy metabolism; Methane metabolism,K05884,"K05979,K06034,K08097,K13039",Piezococcus
+M00596,25.0,"Dissimilatory sulfate reduction, sulfate => H2S",Pathway modules; Energy metabolism; Sulfur metabolism,K00958,"K00394,K00395,K11180,K11181,K27187,K27188,K27189,K27190,K27191",Piezococcus
+M00912,25.0,"NAD biosynthesis, tryptophan => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K01916,K07130","K00452,K00453,K00486,K00767,K00969,K01556",Piezococcus
+M00921,25.0,"Cyclooctatin biosynthesis, dimethylallyl-PP + isopentenyl-PP => cyclooctatin",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of other bacterial compounds,K13787,"K18686,K22997,K22998",Piezococcus
+M00950,25.0,"Biotin biosynthesis, BioU pathway, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K25570",Piezococcus
+M00959,25.0,"Guanine ribonucleotide degradation, GMP => Urate",Pathway modules; Nucleotide metabolism; Purine metabolism,K03787,"K00106,K01487,K03783",Piezococcus
+M00975,25.0,"Betaine degradation, bacteria, betaine => pyruvate",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,K00600,"K00301,K00309,K00479,K01752,K21832",Piezococcus
+M00016,22.22,"Lysine biosynthesis, succinyl-DAP pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,"K00133,K01714","K00215,K00674,K00821,K00928,K01439,K01586,K01778",Piezococcus
+M00119,22.22,"Pantothenate biosynthesis, valine/L-aspartate => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00826,K01579,K01918",Piezococcus
+M00525,22.22,"Lysine biosynthesis, acetyl-DAP pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,"K00133,K01714","K00215,K00841,K00928,K01586,K01778,K05822,K05823",Piezococcus
+M00029,20.0,Urea cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00611,"K01476,K01755,K01940,K01948",Piezococcus
+M00033,20.0,"Ectoine biosynthesis, aspartate => ectoine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,K00133,"K00836,K00928,K06718,K06720",Piezococcus
+M00059,20.0,"Glycosaminoglycan biosynthesis, heparan sulfate backbone",Pathway modules; Glycan metabolism; Glycosaminoglycan metabolism,K01793,"K02366,K02368,K02369,K02576",Piezococcus
+M00115,20.0,"NAD biosynthesis, aspartate => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01916,"K00278,K00767,K00969,K03517",Piezococcus
+M00552,20.0,"D-galactonate degradation, De Ley-Doudoroff pathway, D-galactonate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00927,"K00134,K00883,K01631,K01684",Piezococcus
+M00573,20.0,"Biotin biosynthesis, BioI pathway, long-chain-acyl-ACP => pimeloyl-ACP => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K16593,K19563",Piezococcus
+M00577,20.0,"Biotin biosynthesis, BioW pathway, pimelate => pimeloyl-CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01906,K01935",Piezococcus
+M00953,20.0,"Mugineic acid biosynthesis, methionine => 3-epihydroxymugineic acid",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of phytochemical compounds,K00789,"K05953,K14271,K18054,K22374",Piezococcus
+M00023,16.67,"Tryptophan biosynthesis, chorismate => tryptophan",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,K06001,"K00766,K01656,K01657,K01658,K01695,K01817",Piezococcus
+M00176,16.67,"Assimilatory sulfate reduction, sulfate => H2S",Pathway modules; Energy metabolism; Sulfur metabolism,K00958,"K00390,K00392,K00860",Piezococcus
+M00572,16.67,"Pimeloyl-ACP biosynthesis, BioC-BioH pathway, malonyl-ACP => pimeloyl-ACP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00059,"K00208,K00647,K02169,K02170,K02372",Piezococcus
+M00609,16.67,"Cysteine biosynthesis, methionine => cysteine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00789,"K01243,K07173,K17216,K17217,K17462",Piezococcus
+M00622,16.67,"Nicotinate degradation, nicotinate => fumarate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01799,"K13995,K14974,K15357,K18028,K18029,K18030",Piezococcus
+M00793,16.67,dTDP-L-rhamnose biosynthesis,Pathway modules; Biosynthesis of terpenoids and polyketides; Polyketide sugar unit biosynthesis,K00067,"K00973,K01710,K01790",Piezococcus
+M00874,16.67,"Fatty acid biosynthesis in mitochondria, fungi",Pathway modules; Lipid metabolism; Fatty acid metabolism,K00059,"K00645,K03955,K07512,K09458,K11262,K22541",Piezococcus
+M00892,16.67,"UDP-N-acetyl-D-glucosamine biosynthesis, eukaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00820,"K00621,K00844,K00972,K01810,K01836",Piezococcus
+M00935,16.67,Methanofuran biosynthesis,Pathway modules; Energy metabolism; Methane metabolism,K18933,"K06914,K07072,K07144,K09733,K19793",Piezococcus
+M00958,16.67,"Adenine ribonucleotide degradation, AMP => Urate",Pathway modules; Nucleotide metabolism; Purine metabolism,K03787,"K00106,K01490,K03783",Piezococcus
+M00038,14.29,"Tryptophan metabolism, tryptophan => kynurenine => 2-aminomuconate",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,K07130,"K00452,K00453,K00486,K01556,K03392,K10217",Piezococcus
+M00171,14.29,"C4-dicarboxylic acid cycle, NAD - malic enzyme type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K00025,K00028,K00814,K01006,K14454,K14455",Piezococcus
+M00375,14.29,Hydroxypropionate-hydroxybutylate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01848,K01849,K05606","K00626,K01964,K14465,K14466,K14534,K15016,K15017,K15018,K15019,K15020,K15036,K15037,K15038,K15039",Piezococcus
+M00377,14.29,Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway),Pathway modules; Energy metabolism; Carbon fixation,K00198,"K00194,K00197,K00297,K01491,K01938,K05299,K14138,K15023",Piezococcus
+M00982,14.29,Methylcitrate cycle,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01677,K01678","K00024,K00239,K00240,K00241,K01659,K01682,K01720,K03417",Piezococcus
+M00114,12.5,"Ascorbate biosynthesis, plants, fructose-6P => ascorbate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00966,"K00225,K01809,K10046,K10047,K14190,K17497,K17744",Piezococcus
+M00308,12.5,"Semi-phosphorylative Entner-Doudoroff pathway, gluconate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K00927,"K00134,K00874,K01625,K05308",Piezococcus
+M00376,11.11,3-Hydroxypropionate bi-cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01847,K05606","K00239,K00240,K00241,K01679,K01961,K01962,K01963,K02160,K08691,K09709,K14449,K14468,K14469,K14470,K14471,K14472,K15052",Piezococcus
+M00126,10.0,"Tetrahydrofolate biosynthesis, GTP => THF",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00796,"K00287,K01077,K01495,K11754,K13940",Piezococcus
+M00740,9.09,Methylaspartate cycle,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00261,"K00024,K00031,K01647,K01846,K04835,K14449,K19268,K19280,K19281,K19282,K27802",Piezococcus
+M00055,7.69,N-glycan precursor biosynthesis,Pathway modules; Glycan metabolism; Glycan biosynthesis,K01001,"K00729,K03842,K03843,K03844,K03845,K03846,K03847,K03848,K03849,K03850,K07432,K07441",Piezococcus
+M00117,5.56,"Ubiquinone biosynthesis, prokaryotes, chorismate (+ polyprenyl-PP) => ubiquinol",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K03186,"K00568,K03179,K03181,K03182,K03183,K03184,K03185,K18800",Piezococcus
+M00925,3.03,"Cobalamin biosynthesis, aerobic, uroporphyrinogen III => precorrin 2 => cobyrinate a,c-diamide",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K02230,"K00595,K02224,K02228,K02229,K02303,K03394,K05895,K05934,K05936,K06042,K09882,K09883",Piezococcus
+M00001,100.0,"Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00918,K00927,K01689,K01803,K06859,K11645,K15635",,Pyrococcus
+M00002,100.0,"Glycolysis, core module involving three-carbon compounds",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00927,K01689,K01803,K15635",,Pyrococcus
+M00003,100.0,"Gluconeogenesis, oxaloacetate => fructose-6P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00927,K01596,K01622,K01689,K01803,K15635",,Pyrococcus
+M00005,100.0,"PRPP biosynthesis, ribose 5P => PRPP",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K00948,,Pyrococcus
+M00049,100.0,"Adenine ribonucleotide biosynthesis, IMP => ADP,ATP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00939,K00940,K01756,K01939",,Pyrococcus
+M00052,100.0,"Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00940,K01937,K09903",,Pyrococcus
+M00133,100.0,"Polyamine biosynthesis, arginine => agmatine => putrescine => spermidine",Pathway modules; Amino acid metabolism; Polyamine biosynthesis,"K00797,K01480,K01611,K02626",,Pyrococcus
+M00307,100.0,"Pyruvate oxidation, pyruvate => acetyl-CoA",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00169,K00170,K00171,K00172",,Pyrococcus
+M00432,100.0,"Leucine biosynthesis, 2-oxoisovalerate => 2-oxoisocaproate",Pathway modules; Amino acid metabolism; Branched-chain amino acid metabolism,"K00052,K01649,K01703,K01704",,Pyrococcus
+M00580,100.0,"Pentose phosphate pathway, archaea, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K08093,K08094",,Pyrococcus
+M00880,100.0,"Molybdenum cofactor biosynthesis, GTP => molybdenum cofactor",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K03635,K03637,K03638,K03639,K03750",,Pyrococcus
+M00899,100.0,"Thiamine salvage pathway, HMP/HET => TMP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00878,K00941",,Pyrococcus
+M00916,100.0,"Pyridoxal-P biosynthesis, R5P + glyceraldehyde-3P + glutamine => pyridoxal-P",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K06215,K08681",,Pyrococcus
+M00968,100.0,"Pentose bisphosphate pathway (nucleoside degradation), archaea, nucleoside/NMP => 3-PGA/glycerone phosphate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01601,K18237,K18931",,Pyrococcus
+M00986,100.0,"Sulfur reduction, sulfur => sulfide",Pathway modules; Energy metabolism; Sulfur metabolism,K18367,,Pyrococcus
+M00048,93.75,"De novo purine biosynthesis, PRPP + glutamine => IMP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00764,K01756,K01923,K01933,K01945,K06863,K08289,K23264,K23265,K23269",K11176,Pyrococcus
+M00051,88.89,"De novo pyrimidine biosynthesis, glutamine (+ PRPP) => UMP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00226,K00609,K00610,K00762,K01465,K01591",K01954,Pyrococcus
+M00159,88.89,"V/A-type ATPase, prokaryotes",Pathway modules; Energy metabolism; ATP synthesis,"K02117,K02118,K02119,K02120,K02121,K02122,K02123,K02124",K02107,Pyrococcus
+M00896,83.33,"Thiamine biosynthesis, archaea, AIR (+ NAD+) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K03147,K22699",K00946,Pyrococcus
+M00031,80.0,"Lysine biosynthesis, mediated by LysW, 2-aminoadipate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,"K05826,K05828,K05829,K05831","K05827,K05830",Pyrococcus
+M00763,80.0,"Ornithine biosynthesis, mediated by LysW, glutamate => ornithine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K05826,K05828,K05829,K05831","K05830,K19412",Pyrococcus
+M00035,75.0,Methionine degradation,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00558,K00789,K01251",K01697,Pyrococcus
+M00854,75.0,"Glycogen biosynthesis, glucose-1P => glycogen/starch",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00703,K16149",K00975,Pyrococcus
+M00914,71.43,"Coenzyme A biosynthesis, archaea, 2-oxoisovalerate => 4-phosphopantoate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606,K09722,K09735,K13038","K02201,K06982",Pyrococcus
+M00023,66.67,"Tryptophan biosynthesis, chorismate => tryptophan",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,"K00766,K01657,K01658,K01695,K01696","K01656,K01817",Pyrococcus
+M00535,66.67,"Isoleucine biosynthesis, pyruvate => 2-oxobutanoate",Pathway modules; Amino acid metabolism; Branched-chain amino acid metabolism,"K00052,K01703,K01704",K09011,Pyrococcus
+M00621,66.67,Glycine cleavage system,Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00282,K00283,K00605",K00382,Pyrococcus
+M00741,66.67,"Propanoyl-CoA metabolism, propanoyl-CoA => succinyl-CoA",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K05606","K01965,K01966",Pyrococcus
+M00019,62.5,"Valine/isoleucine biosynthesis, pyruvate => valine / 2-oxobutanoate => isoleucine",Pathway modules; Amino acid metabolism; Branched-chain amino acid metabolism,"K00053,K01652,K01687","K00826,K01653",Pyrococcus
+M00034,62.5,Methionine salvage pathway,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00772,K00789,K00797,K01611,K08963","K00815,K08967,K16054",Pyrococcus
+M00018,60.0,"Threonine biosynthesis, aspartate => homoserine => threonine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00133,K00872,K01733","K00003,K00928",Pyrococcus
+M00115,60.0,"NAD biosynthesis, aspartate => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00767,K01916,K03517","K00278,K00969",Pyrococcus
+M00050,50.0,"Guanine ribonucleotide biosynthesis, IMP => GDP,GTP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00088,K00940","K00942,K01951",Pyrococcus
+M00053,50.0,"Deoxyribonucleotide biosynthesis, ADP/GDP/CDP/UDP => dATP/dGTP/dCTP/dUTP",Pathway modules; Nucleotide metabolism; Purine metabolism,K00940,"K00525,K00526",Pyrococcus
+M00098,50.0,Acylglycerol degradation,Pathway modules; Lipid metabolism; Lipid metabolism,K01054,K01046,Pyrococcus
+M00120,50.0,"Coenzyme A biosynthesis, pantothenate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00859,K13038","K00867,K00954",Pyrococcus
+M00141,50.0,"C1-unit interconversion, eukaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,K00288,Pyrococcus
+M00168,50.0,"CAM (Crassulacean acid metabolism), dark",Pathway modules; Energy metabolism; Carbon fixation,K01595,K00025,Pyrococcus
+M00364,50.0,"C10-C20 isoprenoid biosynthesis, bacteria",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K13787,K01823,Pyrococcus
+M00365,50.0,"C10-C20 isoprenoid biosynthesis, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K13787,K01823,Pyrococcus
+M00570,50.0,"Isoleucine biosynthesis, threonine => 2-oxobutanoate => isoleucine",Pathway modules; Amino acid metabolism; Branched-chain amino acid metabolism,"K00053,K01652,K01687","K00826,K01653,K17989",Pyrococcus
+M00849,50.0,"C5 isoprenoid biosynthesis, mevalonate pathway, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869,K03186,K06981,K09128,K25517,K25518","K00626,K01641,K01823",Pyrococcus
+M00895,50.0,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/glycine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K03147,K03151,K03154","K00946,K03148,K03149,K03153,K10810",Pyrococcus
+M00127,47.22,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/tyrosine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00788,K00941,K03147,K03151,K03154","K00946,K03148,K03149,K03150",Pyrococcus
+M00165,45.45,Reductive pentose phosphate cycle (Calvin cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00150,K00927,K01601,K01803,K01807","K00615,K00855,K01100,K01623,K01783,K03841",Pyrococcus
+M00346,44.44,"Formaldehyde assimilation, serine pathway",Pathway modules; Energy metabolism; Methane metabolism,"K00600,K01595,K01689,K11529","K00018,K00024,K00830,K08691,K08692,K14067",Pyrococcus
+M00909,40.0,"UDP-N-acetyl-D-glucosamine biosynthesis, prokaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00820,K03431","K00845,K01810,K04042",Pyrococcus
+M00938,40.0,"Pyrimidine deoxyribonucleotide biosynthesis, UDP => dTTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00940,K00943","K00525,K00526,K00560,K01520",Pyrococcus
+M00532,36.11,Photorespiration,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00600,K00605,K01601,K02437","K00281,K00382,K00830,K03781,K11517,K14272,K15893,K15918,K19269",Pyrococcus
+M00020,33.33,"Serine biosynthesis, glycerate-3P => serine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,K00058,"K00831,K01079",Pyrococcus
+M00123,33.33,"Biotin biosynthesis, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01935",Pyrococcus
+M00140,33.33,"C1-unit interconversion, prokaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,"K01491,K01938",Pyrococcus
+M00309,33.33,"Non-phosphorylative Entner-Doudoroff pathway, gluconate/galactonate => glycerate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K03738,"K05308,K11395",Pyrococcus
+M00345,33.33,"Formaldehyde assimilation, ribulose monophosphate pathway",Pathway modules; Energy metabolism; Methane metabolism,"K08093,K08094","K00850,K01624",Pyrococcus
+M00368,33.33,"Ethylene biosynthesis, methionine => ethylene",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00789,"K01762,K05933",Pyrococcus
+M00373,33.33,Ethylmalonyl pathway,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K05606","K00023,K00626,K01965,K01966,K08691,K14446,K14447,K14448,K14449,K14451,K17865",Pyrococcus
+M00565,33.33,"Trehalose biosynthesis, D-glucose 1P => trehalose",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00703,K16149","K00975,K01214,K01236,K06044",Pyrococcus
+M00627,33.33,"beta-Lactam resistance, Bla system",Signature modules; Gene set; Drug resistance,K02171,"K02172,K18766",Pyrococcus
+M00842,33.33,"Tetrahydrobiopterin biosynthesis, GTP => BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K00072,K01495",Pyrococcus
+M00843,33.33,"L-threo-Tetrahydrobiopterin biosynthesis, GTP => L-threo-BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K01495,K17745",Pyrococcus
+M00844,33.33,"Arginine biosynthesis, ornithine => arginine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00611,"K01755,K01940",Pyrococcus
+M00855,33.33,"Glycogen degradation, glycogen => glucose-6P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00688,"K01196,K15779",Pyrococcus
+M00913,33.33,"Pantothenate biosynthesis, 2-oxoisovalerate/spermine => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00128,K01918,K13367",Pyrococcus
+M00978,33.33,Ornithine-ammonia cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K00611,K01915","K01755,K01940,K01955,K01956,K27542",Pyrococcus
+M00022,31.25,"Shikimate pathway, phosphoenolpyruvate + erythrose-4P => chorismate",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,"K00014,K03856","K00800,K00891,K01735,K01736,K03785",Pyrococcus
+M00173,30.0,Reductive citrate cycle (Arnon-Buchanan cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177,K01007,K01595","K00024,K00031,K00239,K00240,K01676,K01681,K01902,K01903,K15230,K15231",Pyrococcus
+M00017,28.57,"Methionine biosynthesis, aspartate => homoserine => methionine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00133,K00549","K00003,K00651,K00928,K01739,K01760",Pyrococcus
+M00095,28.57,"C5 isoprenoid biosynthesis, mevalonate pathway",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869","K00626,K00938,K01597,K01641,K01823",Pyrococcus
+M00620,28.57,"Incomplete reductive citrate cycle, acetyl-CoA => oxoglutarate",Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177","K00024,K01677,K01678,K01902,K01903,K01959,K01960,K18209,K18210",Pyrococcus
+M00004,25.0,Pentose phosphate pathway (Pentose phosphate cycle),Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K06859","K00033,K00615,K00616,K01783,K13937",Pyrococcus
+M00007,25.0,"Pentose phosphate pathway, non-oxidative phase, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K01807,"K00615,K00616,K01783",Pyrococcus
+M00170,25.0,"C4-dicarboxylic acid cycle, phosphoenolpyruvate carboxykinase type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K01610,K14454,K14455",Pyrococcus
+M00172,25.0,"C4-dicarboxylic acid cycle, NADP - malic enzyme type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K00029,K00051,K01006",Pyrococcus
+M00632,25.0,"Galactose degradation, Leloir pathway, galactose => alpha-D-glucose-1P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K01784,"K00849,K00965,K01785",Pyrococcus
+M00912,25.0,"NAD biosynthesis, tryptophan => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00767,K01916","K00452,K00453,K00486,K00969,K01432,K01556",Pyrococcus
+M00921,25.0,"Cyclooctatin biosynthesis, dimethylallyl-PP + isopentenyl-PP => cyclooctatin",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of other bacterial compounds,K13787,"K18686,K22997,K22998",Pyrococcus
+M00950,25.0,"Biotin biosynthesis, BioU pathway, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K25570",Pyrococcus
+M00975,25.0,"Betaine degradation, bacteria, betaine => pyruvate",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,K00600,"K00301,K00309,K00479,K01752,K21832",Pyrococcus
+M00374,23.08,Dicarboxylate-hydroxybutyrate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K01007,K01595","K00024,K00239,K00240,K00626,K01677,K01678,K01902,K01903,K14465,K14467,K14534,K15016,K15038",Pyrococcus
+M00119,22.22,"Pantothenate biosynthesis, valine/L-aspartate => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00826,K01579,K01918",Pyrococcus
+M00011,20.0,"Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177","K00026,K00234,K00235,K00236,K00237,K01676,K01902,K01903",Pyrococcus
+M00029,20.0,Urea cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00611,"K01476,K01755,K01940,K01948",Pyrococcus
+M00033,20.0,"Ectoine biosynthesis, aspartate => ectoine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,K00133,"K00836,K00928,K06718,K06720",Pyrococcus
+M00552,20.0,"D-galactonate degradation, De Ley-Doudoroff pathway, D-galactonate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00927,"K00134,K00883,K01631,K01684",Pyrococcus
+M00573,20.0,"Biotin biosynthesis, BioI pathway, long-chain-acyl-ACP => pimeloyl-ACP => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K16593,K19563",Pyrococcus
+M00577,20.0,"Biotin biosynthesis, BioW pathway, pimelate => pimeloyl-CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01906,K01935",Pyrococcus
+M00953,20.0,"Mugineic acid biosynthesis, methionine => 3-epihydroxymugineic acid",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of phytochemical compounds,K00789,"K05953,K14271,K18054,K22374",Pyrococcus
+M00122,16.67,"Cobalamin biosynthesis, cobyrinate a,c-diamide => cobalamin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00798,K02232","K00768,K02225,K02226,K02231,K02233",Pyrococcus
+M00526,16.67,"Lysine biosynthesis, DAP dehydrogenase pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,K00133,"K00215,K00928,K01586,K01714,K03340",Pyrococcus
+M00609,16.67,"Cysteine biosynthesis, methionine => cysteine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00789,"K01243,K07173,K17216,K17217,K17462",Pyrococcus
+M00622,16.67,"Nicotinate degradation, nicotinate => fumarate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01799,"K13995,K14974,K15357,K18028,K18029,K18030",Pyrococcus
+M00892,16.67,"UDP-N-acetyl-D-glucosamine biosynthesis, eukaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00820,"K00621,K00844,K00972,K01810,K01836",Pyrococcus
+M00935,16.67,Methanofuran biosynthesis,Pathway modules; Energy metabolism; Methane metabolism,K18933,"K06914,K07072,K07144,K09733,K19793",Pyrococcus
+M00171,14.29,"C4-dicarboxylic acid cycle, NAD - malic enzyme type",Pathway modules; Energy metabolism; Carbon fixation,K01595,"K00025,K00028,K00814,K01006,K14454,K14455",Pyrococcus
+M00375,14.29,Hydroxypropionate-hydroxybutylate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01848,K01849,K05606","K00626,K01964,K14465,K14466,K14534,K15016,K15017,K15018,K15019,K15020,K15036,K15037,K15038,K15039",Pyrococcus
+M00527,14.29,"Lysine biosynthesis, DAP aminotransferase pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,K00133,"K00215,K00928,K01586,K01714,K01778,K10206",Pyrococcus
+M00845,14.29,"Arginine biosynthesis, glutamate => acetylcitrulline => arginine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00145,"K00821,K01438,K01755,K01940,K09065,K22478",Pyrococcus
+M00009,12.5,"Citrate cycle (TCA cycle, Krebs cycle)",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177","K00026,K00031,K00234,K00235,K00236,K00237,K01647,K01676,K01681,K01902,K01903",Pyrococcus
+M00028,12.5,"Ornithine biosynthesis, glutamate => ornithine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00145,"K00618,K00818,K00930,K01438",Pyrococcus
+M00114,12.5,"Ascorbate biosynthesis, plants, fructose-6P => ascorbate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00966,"K00225,K01809,K10046,K10047,K14190,K17497,K17744",Pyrococcus
+M00308,12.5,"Semi-phosphorylative Entner-Doudoroff pathway, gluconate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K00927,"K00134,K00874,K01625,K05308",Pyrococcus
+M00897,12.5,"Thiamine biosynthesis, plants, AIR (+ NAD+) => TMP/thiamine/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K03147,"K00949,K03146,K14153,K22911",Pyrococcus
+M00016,11.11,"Lysine biosynthesis, succinyl-DAP pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,K00133,"K00215,K00674,K00821,K00928,K01439,K01586,K01714,K01778",Pyrococcus
+M00376,11.11,3-Hydroxypropionate bi-cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01847,K05606","K00239,K00240,K00241,K01679,K01961,K01962,K01963,K02160,K08691,K09709,K14449,K14468,K14469,K14470,K14471,K14472,K15052",Pyrococcus
+M00525,11.11,"Lysine biosynthesis, acetyl-DAP pathway, aspartate => lysine",Pathway modules; Amino acid metabolism; Lysine metabolism,K00133,"K00215,K00841,K00928,K01586,K01714,K01778,K05822,K05823",Pyrococcus
+M00740,9.09,Methylaspartate cycle,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00261,"K00024,K00031,K01647,K01846,K04835,K14449,K19268,K19280,K19281,K19282,K27802",Pyrococcus
+M00117,5.56,"Ubiquinone biosynthesis, prokaryotes, chorismate (+ polyprenyl-PP) => ubiquinol",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K03186,"K00568,K03179,K03181,K03182,K03183,K03184,K03185,K18800",Pyrococcus
+M00001,100.0,"Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00918,K00927,K01689,K01803,K06859,K11645,K15635",,Thermococcales
+M00002,100.0,"Glycolysis, core module involving three-carbon compounds",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00927,K01689,K01803,K15635",,Thermococcales
+M00003,100.0,"Gluconeogenesis, oxaloacetate => fructose-6P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00927,K01596,K01622,K01689,K01803,K15635",,Thermococcales
+M00005,100.0,"PRPP biosynthesis, ribose 5P => PRPP",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K00948,,Thermococcales
+M00049,100.0,"Adenine ribonucleotide biosynthesis, IMP => ADP,ATP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00939,K00940,K01756,K01939",,Thermococcales
+M00052,100.0,"Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00940,K01937,K09903",,Thermococcales
+M00133,100.0,"Polyamine biosynthesis, arginine => agmatine => putrescine => spermidine",Pathway modules; Amino acid metabolism; Polyamine biosynthesis,"K00797,K01480,K01611,K02626",,Thermococcales
+M00159,100.0,"V/A-type ATPase, prokaryotes",Pathway modules; Energy metabolism; ATP synthesis,"K02107,K02117,K02118,K02119,K02120,K02121,K02122,K02123,K02124",,Thermococcales
+M00307,100.0,"Pyruvate oxidation, pyruvate => acetyl-CoA",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00169,K00170,K00171,K00172",,Thermococcales
+M00580,100.0,"Pentose phosphate pathway, archaea, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K08093,K08094",,Thermococcales
+M00880,100.0,"Molybdenum cofactor biosynthesis, GTP => molybdenum cofactor",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K03635,K03637,K03638,K03639,K03750",,Thermococcales
+M00916,100.0,"Pyridoxal-P biosynthesis, R5P + glyceraldehyde-3P + glutamine => pyridoxal-P",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K06215,K08681",,Thermococcales
+M00968,100.0,"Pentose bisphosphate pathway (nucleoside degradation), archaea, nucleoside/NMP => 3-PGA/glycerone phosphate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00757,K01601,K18237,K21056",,Thermococcales
+M00986,100.0,"Sulfur reduction, sulfur => sulfide",Pathway modules; Energy metabolism; Sulfur metabolism,K18367,,Thermococcales
+M00048,93.75,"De novo purine biosynthesis, PRPP + glutamine => IMP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00764,K01756,K01923,K01933,K01945,K06863,K08289,K23264,K23265,K23269",K11176,Thermococcales
+M00914,85.71,"Coenzyme A biosynthesis, archaea, 2-oxoisovalerate => 4-phosphopantoate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606,K06982,K09722,K09735,K13038",K02201,Thermococcales
+M00741,83.33,"Propanoyl-CoA metabolism, propanoyl-CoA => succinyl-CoA",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K01966,K05606",K01965,Thermococcales
+M00896,83.33,"Thiamine biosynthesis, archaea, AIR (+ NAD+) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00946,K03147,K22699","K00788,K00941",Thermococcales
+M00051,77.78,"De novo pyrimidine biosynthesis, glutamine (+ PRPP) => UMP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00609,K00610,K00762,K01591,K17828","K01465,K01954",Thermococcales
+M00053,75.0,"Deoxyribonucleotide biosynthesis, ADP/GDP/CDP/UDP => dATP/dGTP/dCTP/dUTP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00525,K00940",K00526,Thermococcales
+M00854,75.0,"Glycogen biosynthesis, glucose-1P => glycogen/starch",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00703,K16149",K00975,Thermococcales
+M00938,70.0,"Pyrimidine deoxyribonucleotide biosynthesis, UDP => dTTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00525,K00940,K00943,K03465","K00526,K01520",Thermococcales
+M00020,66.67,"Serine biosynthesis, glycerate-3P => serine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00058,K01079",K00831,Thermococcales
+M00621,66.67,Glycine cleavage system,Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00282,K00283,K00605",K00382,Thermococcales
+M00034,62.5,Methionine salvage pathway,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00772,K00789,K00797,K01611,K08963","K00815,K08967,K16054",Thermococcales
+M00115,60.0,"NAD biosynthesis, aspartate => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00767,K01916,K03517","K00278,K00969",Thermococcales
+M00122,58.33,"Cobalamin biosynthesis, cobyrinate a,c-diamide => cobalamin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00798,K02227,K02232,K02233","K00768,K02226,K02231",Thermococcales
+M00035,50.0,Methionine degradation,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00789,K01251","K00552,K01697",Thermococcales
+M00050,50.0,"Guanine ribonucleotide biosynthesis, IMP => GDP,GTP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00088,K00940","K00942,K01951",Thermococcales
+M00098,50.0,Acylglycerol degradation,Pathway modules; Lipid metabolism; Lipid metabolism,K01054,K01046,Thermococcales
+M00120,50.0,"Coenzyme A biosynthesis, pantothenate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00859,K13038","K00867,K00954",Thermococcales
+M00141,50.0,"C1-unit interconversion, eukaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,K00288,Thermococcales
+M00364,50.0,"C10-C20 isoprenoid biosynthesis, bacteria",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K13787,K01823,Thermococcales
+M00365,50.0,"C10-C20 isoprenoid biosynthesis, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K13787,K01823,Thermococcales
+M00849,50.0,"C5 isoprenoid biosynthesis, mevalonate pathway, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869,K03186,K06981,K09128,K25517,K25518","K00626,K01641,K01823",Thermococcales
+M00855,50.0,"Glycogen degradation, glycogen => glucose-6P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00688,K22451","K02438,K15779",Thermococcales
+M00127,47.22,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/tyrosine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00946,K03147,K03151,K03154","K03148,K03149,K03150,K14153",Thermococcales
+M00165,45.45,Reductive pentose phosphate cycle (Calvin cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00150,K00927,K01601,K01803,K01807","K00615,K00855,K01100,K01623,K01783,K03841",Thermococcales
+M00373,41.67,Ethylmalonyl pathway,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K01966,K05606","K00023,K00626,K01965,K08691,K14446,K14447,K14448,K14449,K14451,K17865",Thermococcales
+M00895,41.67,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/glycine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00946,K03147,K03151,K03154","K00788,K00941,K03148,K03149,K03153,K10810",Thermococcales
+M00018,40.0,"Threonine biosynthesis, aspartate => homoserine => threonine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00003,K01733","K00133,K00872,K00928",Thermococcales
+M00909,40.0,"UDP-N-acetyl-D-glucosamine biosynthesis, prokaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00820,K03431","K00845,K01810,K04042",Thermococcales
+M00912,37.5,"NAD biosynthesis, tryptophan => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00767,K01916,K07130","K00452,K00453,K00486,K00969,K01556",Thermococcales
+M00532,36.11,Photorespiration,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00600,K00605,K01601,K02437","K00281,K00382,K00830,K03781,K11517,K14272,K15893,K15918,K19269",Thermococcales
+M00620,35.71,"Incomplete reductive citrate cycle, acetyl-CoA => oxoglutarate",Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177,K01960","K00024,K01677,K01678,K01902,K01903,K01959,K18209,K18210",Thermococcales
+M00123,33.33,"Biotin biosynthesis, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01935",Thermococcales
+M00140,33.33,"C1-unit interconversion, prokaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,"K01491,K01938",Thermococcales
+M00309,33.33,"Non-phosphorylative Entner-Doudoroff pathway, gluconate/galactonate => glycerate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K03738,"K05308,K11395",Thermococcales
+M00345,33.33,"Formaldehyde assimilation, ribulose monophosphate pathway",Pathway modules; Energy metabolism; Methane metabolism,"K08093,K08094","K00850,K01624",Thermococcales
+M00346,33.33,"Formaldehyde assimilation, serine pathway",Pathway modules; Energy metabolism; Methane metabolism,"K00600,K01689,K11529","K00018,K00024,K00830,K01595,K08691,K08692,K14067",Thermococcales
+M00368,33.33,"Ethylene biosynthesis, methionine => ethylene",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00789,"K01762,K05933",Thermococcales
+M00565,33.33,"Trehalose biosynthesis, D-glucose 1P => trehalose",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00703,K16149","K00975,K01214,K01236,K06044",Thermococcales
+M00627,33.33,"beta-Lactam resistance, Bla system",Signature modules; Gene set; Drug resistance,K02171,"K02172,K18766",Thermococcales
+M00842,33.33,"Tetrahydrobiopterin biosynthesis, GTP => BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K00072,K01495",Thermococcales
+M00843,33.33,"L-threo-Tetrahydrobiopterin biosynthesis, GTP => L-threo-BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K01495,K17745",Thermococcales
+M00844,33.33,"Arginine biosynthesis, ornithine => arginine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00611,"K01755,K01940",Thermococcales
+M00913,33.33,"Pantothenate biosynthesis, 2-oxoisovalerate/spermine => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00128,K01918,K13367",Thermococcales
+M00978,33.33,Ornithine-ammonia cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K00611,K01915","K01755,K01940,K01955,K01956,K27542",Thermococcales
+M00095,28.57,"C5 isoprenoid biosynthesis, mevalonate pathway",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869","K00626,K00938,K01597,K01641,K01823",Thermococcales
+M00004,25.0,Pentose phosphate pathway (Pentose phosphate cycle),Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K06859","K00033,K00615,K00616,K01783,K13937",Thermococcales
+M00007,25.0,"Pentose phosphate pathway, non-oxidative phase, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K01807,"K00615,K00616,K01783",Thermococcales
+M00173,25.0,Reductive citrate cycle (Arnon-Buchanan cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177,K01007","K00024,K00031,K00239,K00240,K01595,K01676,K01681,K01902,K01903,K15230,K15231",Thermococcales
+M00596,25.0,"Dissimilatory sulfate reduction, sulfate => H2S",Pathway modules; Energy metabolism; Sulfur metabolism,K00958,"K00394,K00395,K11180,K11181,K27187,K27188,K27189,K27190,K27191",Thermococcales
+M00632,25.0,"Galactose degradation, Leloir pathway, galactose => alpha-D-glucose-1P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K01784,"K00849,K00965,K01785",Thermococcales
+M00921,25.0,"Cyclooctatin biosynthesis, dimethylallyl-PP + isopentenyl-PP => cyclooctatin",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of other bacterial compounds,K13787,"K18686,K22997,K22998",Thermococcales
+M00950,25.0,"Biotin biosynthesis, BioU pathway, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K25570",Thermococcales
+M00959,25.0,"Guanine ribonucleotide degradation, GMP => Urate",Pathway modules; Nucleotide metabolism; Purine metabolism,K03787,"K00106,K01487,K03783",Thermococcales
+M00975,25.0,"Betaine degradation, bacteria, betaine => pyruvate",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,K00600,"K00301,K00309,K00479,K01752,K21832",Thermococcales
+M00119,22.22,"Pantothenate biosynthesis, valine/L-aspartate => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00826,K01579,K01918",Thermococcales
+M00011,20.0,"Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177","K00026,K00234,K00235,K00236,K00237,K01676,K01902,K01903",Thermococcales
+M00029,20.0,Urea cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00611,"K01476,K01755,K01940,K01948",Thermococcales
+M00552,20.0,"D-galactonate degradation, De Ley-Doudoroff pathway, D-galactonate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00927,"K00134,K00883,K01631,K01684",Thermococcales
+M00573,20.0,"Biotin biosynthesis, BioI pathway, long-chain-acyl-ACP => pimeloyl-ACP => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K16593,K19563",Thermococcales
+M00577,20.0,"Biotin biosynthesis, BioW pathway, pimelate => pimeloyl-CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01906,K01935",Thermococcales
+M00953,20.0,"Mugineic acid biosynthesis, methionine => 3-epihydroxymugineic acid",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of phytochemical compounds,K00789,"K05953,K14271,K18054,K22374",Thermococcales
+M00023,16.67,"Tryptophan biosynthesis, chorismate => tryptophan",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,K06001,"K00766,K01656,K01657,K01658,K01695,K01817",Thermococcales
+M00176,16.67,"Assimilatory sulfate reduction, sulfate => H2S",Pathway modules; Energy metabolism; Sulfur metabolism,K00958,"K00390,K00392,K00860",Thermococcales
+M00609,16.67,"Cysteine biosynthesis, methionine => cysteine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00789,"K01243,K07173,K17216,K17217,K17462",Thermococcales
+M00622,16.67,"Nicotinate degradation, nicotinate => fumarate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01799,"K13995,K14974,K15357,K18028,K18029,K18030",Thermococcales
+M00892,16.67,"UDP-N-acetyl-D-glucosamine biosynthesis, eukaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00820,"K00621,K00844,K00972,K01810,K01836",Thermococcales
+M00935,16.67,Methanofuran biosynthesis,Pathway modules; Energy metabolism; Methane metabolism,K18933,"K06914,K07072,K07144,K09733,K19793",Thermococcales
+M00958,16.67,"Adenine ribonucleotide degradation, AMP => Urate",Pathway modules; Nucleotide metabolism; Purine metabolism,K03787,"K00106,K01490,K03783",Thermococcales
+M00374,15.38,Dicarboxylate-hydroxybutyrate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K01007","K00024,K00239,K00240,K00626,K01595,K01677,K01678,K01902,K01903,K14465,K14467,K14534,K15016,K15038",Thermococcales
+M00017,14.29,"Methionine biosynthesis, aspartate => homoserine => methionine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00003,"K00133,K00548,K00651,K00928,K01739,K01760",Thermococcales
+M00038,14.29,"Tryptophan metabolism, tryptophan => kynurenine => 2-aminomuconate",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,K07130,"K00452,K00453,K00486,K01556,K03392,K10217",Thermococcales
+M00375,14.29,Hydroxypropionate-hydroxybutylate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01848,K01849,K05606","K00626,K01964,K14465,K14466,K14534,K15016,K15017,K15018,K15019,K15020,K15036,K15037,K15038,K15039",Thermococcales
+M00009,12.5,"Citrate cycle (TCA cycle, Krebs cycle)",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177","K00026,K00031,K00234,K00235,K00236,K00237,K01647,K01676,K01681,K01902,K01903",Thermococcales
+M00114,12.5,"Ascorbate biosynthesis, plants, fructose-6P => ascorbate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00966,"K00225,K01809,K10046,K10047,K14190,K17497,K17744",Thermococcales
+M00308,12.5,"Semi-phosphorylative Entner-Doudoroff pathway, gluconate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K00927,"K00134,K00874,K01625,K05308",Thermococcales
+M00897,12.5,"Thiamine biosynthesis, plants, AIR (+ NAD+) => TMP/thiamine/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K03147,"K00949,K03146,K14153,K22911",Thermococcales
+M00376,11.11,3-Hydroxypropionate bi-cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01847,K05606","K00239,K00240,K00241,K01679,K01961,K01962,K01963,K02160,K08691,K09709,K14449,K14468,K14469,K14470,K14471,K14472,K15052",Thermococcales
+M00126,10.0,"Tetrahydrofolate biosynthesis, GTP => THF",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00796,"K00287,K01077,K01495,K11754,K13940",Thermococcales
+M00055,7.69,N-glycan precursor biosynthesis,Pathway modules; Glycan metabolism; Glycan biosynthesis,K01001,"K00729,K03842,K03843,K03844,K03845,K03846,K03847,K03848,K03849,K03850,K07432,K07441",Thermococcales
+M00117,5.56,"Ubiquinone biosynthesis, prokaryotes, chorismate (+ polyprenyl-PP) => ubiquinol",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K03186,"K00568,K03179,K03181,K03182,K03183,K03184,K03185,K18800",Thermococcales
+M00001,100.0,"Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00918,K00927,K01689,K01803,K06859,K11645,K15635",,Thermococcus
+M00002,100.0,"Glycolysis, core module involving three-carbon compounds",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00873,K00927,K01689,K01803,K15635",,Thermococcus
+M00003,100.0,"Gluconeogenesis, oxaloacetate => fructose-6P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00150,K00927,K01596,K01622,K01689,K01803,K15635",,Thermococcus
+M00005,100.0,"PRPP biosynthesis, ribose 5P => PRPP",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K00948,,Thermococcus
+M00049,100.0,"Adenine ribonucleotide biosynthesis, IMP => ADP,ATP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00939,K00940,K01756,K01939",,Thermococcus
+M00052,100.0,"Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00940,K01937,K09903",,Thermococcus
+M00133,100.0,"Polyamine biosynthesis, arginine => agmatine => putrescine => spermidine",Pathway modules; Amino acid metabolism; Polyamine biosynthesis,"K00797,K01480,K01611,K02626",,Thermococcus
+M00159,100.0,"V/A-type ATPase, prokaryotes",Pathway modules; Energy metabolism; ATP synthesis,"K02107,K02117,K02118,K02119,K02120,K02121,K02122,K02123,K02124",,Thermococcus
+M00307,100.0,"Pyruvate oxidation, pyruvate => acetyl-CoA",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00169,K00170,K00171,K00172",,Thermococcus
+M00364,100.0,"C10-C20 isoprenoid biosynthesis, bacteria",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K01823,K13787",,Thermococcus
+M00365,100.0,"C10-C20 isoprenoid biosynthesis, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K01823,K13787",,Thermococcus
+M00580,100.0,"Pentose phosphate pathway, archaea, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K08093,K08094",,Thermococcus
+M00880,100.0,"Molybdenum cofactor biosynthesis, GTP => molybdenum cofactor",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K03635,K03637,K03638,K03639,K03750",,Thermococcus
+M00896,100.0,"Thiamine biosynthesis, archaea, AIR (+ NAD+) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00946,K03147,K21219,K22699",,Thermococcus
+M00916,100.0,"Pyridoxal-P biosynthesis, R5P + glyceraldehyde-3P + glutamine => pyridoxal-P",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K06215,K08681",,Thermococcus
+M00968,100.0,"Pentose bisphosphate pathway (nucleoside degradation), archaea, nucleoside/NMP => 3-PGA/glycerone phosphate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00757,K01601,K18237,K21056",,Thermococcus
+M00986,100.0,"Sulfur reduction, sulfur => sulfide",Pathway modules; Energy metabolism; Sulfur metabolism,K18367,,Thermococcus
+M00048,93.75,"De novo purine biosynthesis, PRPP + glutamine => IMP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00764,K01756,K01923,K01933,K01945,K06863,K08289,K23264,K23265,K23269",K11176,Thermococcus
+M00914,85.71,"Coenzyme A biosynthesis, archaea, 2-oxoisovalerate => 4-phosphopantoate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606,K06982,K09722,K09735,K13038",K02201,Thermococcus
+M00741,83.33,"Propanoyl-CoA metabolism, propanoyl-CoA => succinyl-CoA",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K01966,K05606",K01965,Thermococcus
+M00051,77.78,"De novo pyrimidine biosynthesis, glutamine (+ PRPP) => UMP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00609,K00610,K00762,K01591,K17828","K01465,K01954",Thermococcus
+M00854,75.0,"Glycogen biosynthesis, glucose-1P => glycogen/starch",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00703,K16149",K00975,Thermococcus
+M00020,66.67,"Serine biosynthesis, glycerate-3P => serine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00058,K01079",K00831,Thermococcus
+M00849,66.67,"C5 isoprenoid biosynthesis, mevalonate pathway, archaea",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869,K01823,K03186,K06981,K09128,K25517,K25518","K00626,K01641",Thermococcus
+M00034,62.5,Methionine salvage pathway,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00772,K00789,K00797,K01611,K08963","K00815,K08967,K16054",Thermococcus
+M00115,60.0,"NAD biosynthesis, aspartate => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00767,K01916,K03517","K00278,K00969",Thermococcus
+M00938,60.0,"Pyrimidine deoxyribonucleotide biosynthesis, UDP => dTTP",Pathway modules; Nucleotide metabolism; Pyrimidine metabolism,"K00940,K00943,K03465","K00525,K00526,K01520",Thermococcus
+M00122,58.33,"Cobalamin biosynthesis, cobyrinate a,c-diamide => cobalamin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00798,K02227,K02232,K02233","K00768,K02226,K02231",Thermococcus
+M00127,58.33,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/tyrosine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00946,K03147,K03151,K03154,K21219","K03148,K03149,K03150",Thermococcus
+M00035,50.0,Methionine degradation,Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,"K00789,K01251","K00552,K01697",Thermococcus
+M00050,50.0,"Guanine ribonucleotide biosynthesis, IMP => GDP,GTP",Pathway modules; Nucleotide metabolism; Purine metabolism,"K00088,K00940","K00942,K01951",Thermococcus
+M00053,50.0,"Deoxyribonucleotide biosynthesis, ADP/GDP/CDP/UDP => dATP/dGTP/dCTP/dUTP",Pathway modules; Nucleotide metabolism; Purine metabolism,K00940,"K00525,K00526",Thermococcus
+M00098,50.0,Acylglycerol degradation,Pathway modules; Lipid metabolism; Lipid metabolism,K01054,K01046,Thermococcus
+M00120,50.0,"Coenzyme A biosynthesis, pantothenate => CoA",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00859,K13038","K00867,K00954",Thermococcus
+M00141,50.0,"C1-unit interconversion, eukaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,K00288,Thermococcus
+M00855,50.0,"Glycogen degradation, glycogen => glucose-6P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00688,K22451","K02438,K15779",Thermococcus
+M00899,50.0,"Thiamine salvage pathway, HMP/HET => TMP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K21219,K00878,Thermococcus
+M00165,45.45,Reductive pentose phosphate cycle (Calvin cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00150,K00927,K01601,K01803,K01807","K00615,K00855,K01100,K01623,K01783,K03841",Thermococcus
+M00095,42.86,"C5 isoprenoid biosynthesis, mevalonate pathway",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,"K00021,K00869,K01823","K00626,K00938,K01597,K01641",Thermococcus
+M00373,41.67,Ethylmalonyl pathway,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K01847,K01966,K05606","K00023,K00626,K01965,K08691,K14446,K14447,K14448,K14449,K14451,K17865",Thermococcus
+M00895,41.67,"Thiamine biosynthesis, prokaryotes, AIR (+ DXP/glycine) => TMP/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00946,K03147,K03151,K03154","K00788,K00941,K03148,K03149,K03153,K10810",Thermococcus
+M00018,40.0,"Threonine biosynthesis, aspartate => homoserine => threonine",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,"K00003,K01733","K00133,K00872,K00928",Thermococcus
+M00912,37.5,"NAD biosynthesis, tryptophan => quinolinate => NAD",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00767,K01916,K07130","K00452,K00453,K00486,K00969,K01556",Thermococcus
+M00532,36.11,Photorespiration,Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00600,K00605,K01601,K02437","K00281,K00382,K00830,K03781,K11517,K14272,K15893,K15918,K19269",Thermococcus
+M00620,35.71,"Incomplete reductive citrate cycle, acetyl-CoA => oxoglutarate",Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177,K01960","K00024,K01677,K01678,K01902,K01903,K01959,K18209,K18210",Thermococcus
+M00123,33.33,"Biotin biosynthesis, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01935",Thermococcus
+M00140,33.33,"C1-unit interconversion, prokaryotes",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00600,"K01491,K01938",Thermococcus
+M00309,33.33,"Non-phosphorylative Entner-Doudoroff pathway, gluconate/galactonate => glycerate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K03738,"K05308,K11395",Thermococcus
+M00345,33.33,"Formaldehyde assimilation, ribulose monophosphate pathway",Pathway modules; Energy metabolism; Methane metabolism,"K08093,K08094","K00850,K01624",Thermococcus
+M00367,33.33,"C10-C20 isoprenoid biosynthesis, non-plant eukaryotes",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K01823,"K00787,K00804",Thermococcus
+M00368,33.33,"Ethylene biosynthesis, methionine => ethylene",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00789,"K01762,K05933",Thermococcus
+M00565,33.33,"Trehalose biosynthesis, D-glucose 1P => trehalose",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,"K00703,K16149","K00975,K01214,K01236,K06044",Thermococcus
+M00621,33.33,Glycine cleavage system,Pathway modules; Amino acid metabolism; Serine and threonine metabolism,K00605,"K00281,K00382",Thermococcus
+M00627,33.33,"beta-Lactam resistance, Bla system",Signature modules; Gene set; Drug resistance,K02171,"K02172,K18766",Thermococcus
+M00842,33.33,"Tetrahydrobiopterin biosynthesis, GTP => BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K00072,K01495",Thermococcus
+M00843,33.33,"L-threo-Tetrahydrobiopterin biosynthesis, GTP => L-threo-BH4",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01737,"K01495,K17745",Thermococcus
+M00844,33.33,"Arginine biosynthesis, ornithine => arginine",Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00611,"K01755,K01940",Thermococcus
+M00913,33.33,"Pantothenate biosynthesis, 2-oxoisovalerate/spermine => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00128,K01918,K13367",Thermococcus
+M00978,33.33,Ornithine-ammonia cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,"K00611,K01915","K01755,K01940,K01955,K01956,K27542",Thermococcus
+M00004,25.0,Pentose phosphate pathway (Pentose phosphate cycle),Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K01807,K06859","K00033,K00615,K00616,K01783,K13937",Thermococcus
+M00007,25.0,"Pentose phosphate pathway, non-oxidative phase, fructose 6P => ribose 5P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K01807,"K00615,K00616,K01783",Thermococcus
+M00173,25.0,Reductive citrate cycle (Arnon-Buchanan cycle),Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K00174,K00175,K00176,K00177,K01007","K00024,K00031,K00239,K00240,K01595,K01676,K01681,K01902,K01903,K15230,K15231",Thermococcus
+M00366,25.0,"C10-C20 isoprenoid biosynthesis, plants",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K01823,"K00787,K13789,K14066",Thermococcus
+M00632,25.0,"Galactose degradation, Leloir pathway, galactose => alpha-D-glucose-1P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K01784,"K00849,K00965,K01785",Thermococcus
+M00921,25.0,"Cyclooctatin biosynthesis, dimethylallyl-PP + isopentenyl-PP => cyclooctatin",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of other bacterial compounds,K13787,"K18686,K22997,K22998",Thermococcus
+M00950,25.0,"Biotin biosynthesis, BioU pathway, pimeloyl-ACP/CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K25570",Thermococcus
+M00959,25.0,"Guanine ribonucleotide degradation, GMP => Urate",Pathway modules; Nucleotide metabolism; Purine metabolism,K03787,"K00106,K01487,K03783",Thermococcus
+M00975,25.0,"Betaine degradation, bacteria, betaine => pyruvate",Pathway modules; Amino acid metabolism; Serine and threonine metabolism,K00600,"K00301,K00309,K00479,K01752,K21832",Thermococcus
+M00119,22.22,"Pantothenate biosynthesis, valine/L-aspartate => pantothenate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,"K00077,K00606","K00826,K01579,K01918",Thermococcus
+M00346,22.22,"Formaldehyde assimilation, serine pathway",Pathway modules; Energy metabolism; Methane metabolism,"K00600,K01689","K00018,K00024,K00830,K01595,K08691,K08692,K11529,K14067",Thermococcus
+M00011,20.0,"Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177","K00026,K00234,K00235,K00236,K00237,K01676,K01902,K01903",Thermococcus
+M00029,20.0,Urea cycle,Pathway modules; Amino acid metabolism; Arginine and proline metabolism,K00611,"K01476,K01755,K01940,K01948",Thermococcus
+M00552,20.0,"D-galactonate degradation, De Ley-Doudoroff pathway, D-galactonate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00927,"K00134,K00883,K01631,K01684",Thermococcus
+M00573,20.0,"Biotin biosynthesis, BioI pathway, long-chain-acyl-ACP => pimeloyl-ACP => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K01012,K01935,K16593,K19563",Thermococcus
+M00577,20.0,"Biotin biosynthesis, BioW pathway, pimelate => pimeloyl-CoA => biotin",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00652,"K00833,K01012,K01906,K01935",Thermococcus
+M00909,20.0,"UDP-N-acetyl-D-glucosamine biosynthesis, prokaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00820,"K00845,K01810,K03431,K04042",Thermococcus
+M00953,20.0,"Mugineic acid biosynthesis, methionine => 3-epihydroxymugineic acid",Pathway modules; Biosynthesis of other secondary metabolites; Biosynthesis of phytochemical compounds,K00789,"K05953,K14271,K18054,K22374",Thermococcus
+M00144,18.18,NADH,Pathway modules; Energy metabolism; ATP synthesis,"K00334,K00335","K00330,K00331,K00332,K00333,K00336,K00337,K00338,K00339,K00340,K00341,K00342,K00343",Thermococcus
+M00023,16.67,"Tryptophan biosynthesis, chorismate => tryptophan",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,K06001,"K00766,K01656,K01657,K01658,K01695,K01817",Thermococcus
+M00609,16.67,"Cysteine biosynthesis, methionine => cysteine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00789,"K01243,K07173,K17216,K17217,K17462",Thermococcus
+M00622,16.67,"Nicotinate degradation, nicotinate => fumarate",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K01799,"K13995,K14974,K15357,K18028,K18029,K18030",Thermococcus
+M00892,16.67,"UDP-N-acetyl-D-glucosamine biosynthesis, eukaryotes, glucose => UDP-GlcNAc",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00820,"K00621,K00844,K00972,K01810,K01836",Thermococcus
+M00935,16.67,Methanofuran biosynthesis,Pathway modules; Energy metabolism; Methane metabolism,K18933,"K06914,K07072,K07144,K09733,K19793",Thermococcus
+M00958,16.67,"Adenine ribonucleotide degradation, AMP => Urate",Pathway modules; Nucleotide metabolism; Purine metabolism,K03787,"K00106,K01490,K03783",Thermococcus
+M00374,15.38,Dicarboxylate-hydroxybutyrate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K00169,K00170,K00171,K00172,K01007","K00024,K00239,K00240,K00626,K01595,K01677,K01678,K01902,K01903,K14465,K14467,K14534,K15016,K15038",Thermococcus
+M00017,14.29,"Methionine biosynthesis, aspartate => homoserine => methionine",Pathway modules; Amino acid metabolism; Cysteine and methionine metabolism,K00003,"K00133,K00548,K00651,K00928,K01739,K01760",Thermococcus
+M00038,14.29,"Tryptophan metabolism, tryptophan => kynurenine => 2-aminomuconate",Pathway modules; Amino acid metabolism; Aromatic amino acid metabolism,K07130,"K00452,K00453,K00486,K01556,K03392,K10217",Thermococcus
+M00375,14.29,Hydroxypropionate-hydroxybutylate cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01848,K01849,K05606","K00626,K01964,K14465,K14466,K14534,K15016,K15017,K15018,K15019,K15020,K15036,K15037,K15038,K15039",Thermococcus
+M00009,12.5,"Citrate cycle (TCA cycle, Krebs cycle)",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,"K00174,K00175,K00176,K00177","K00026,K00031,K00234,K00235,K00236,K00237,K01647,K01676,K01681,K01902,K01903",Thermococcus
+M00096,12.5,"C5 isoprenoid biosynthesis, non-mevalonate pathway",Pathway modules; Biosynthesis of terpenoids and polyketides; Terpenoid backbone biosynthesis,K01823,"K00099,K00919,K00991,K01662,K01770,K03526,K03527",Thermococcus
+M00114,12.5,"Ascorbate biosynthesis, plants, fructose-6P => ascorbate",Pathway modules; Carbohydrate metabolism; Other carbohydrate metabolism,K00966,"K00225,K01809,K10046,K10047,K14190,K17497,K17744",Thermococcus
+M00308,12.5,"Semi-phosphorylative Entner-Doudoroff pathway, gluconate => glycerate-3P",Pathway modules; Carbohydrate metabolism; Central carbohydrate metabolism,K00927,"K00134,K00874,K01625,K05308",Thermococcus
+M00897,12.5,"Thiamine biosynthesis, plants, AIR (+ NAD+) => TMP/thiamine/TPP",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K03147,"K00949,K03146,K14153,K22911",Thermococcus
+M00376,11.11,3-Hydroxypropionate bi-cycle,Pathway modules; Energy metabolism; Carbon fixation,"K01847,K05606","K00239,K00240,K00241,K01679,K01961,K01962,K01963,K02160,K08691,K09709,K14449,K14468,K14469,K14470,K14471,K14472,K15052",Thermococcus
+M00126,10.0,"Tetrahydrofolate biosynthesis, GTP => THF",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K00796,"K00287,K01077,K01495,K11754,K13940",Thermococcus
+M00055,7.69,N-glycan precursor biosynthesis,Pathway modules; Glycan metabolism; Glycan biosynthesis,K01001,"K00729,K03842,K03843,K03844,K03845,K03846,K03847,K03848,K03849,K03850,K07432,K07441",Thermococcus
+M00117,5.56,"Ubiquinone biosynthesis, prokaryotes, chorismate (+ polyprenyl-PP) => ubiquinol",Pathway modules; Metabolism of cofactors and vitamins; Cofactor and vitamin metabolism,K03186,"K00568,K03179,K03181,K03182,K03183,K03184,K03185,K18800",Thermococcus

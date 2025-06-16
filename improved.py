@@ -19,29 +19,19 @@ import json
 warnings.filterwarnings('ignore')
 
 class MetabolicHeatmapGenerator:
-    def __init__(self):
+    def __init__(self):        
         self.data = {}  # genus_name: dataframe
         self.completeness_threshold = 75.0
         self.genus_order = None
         self.pathway_order = None
         self.pathway_groups = None  # Manual pathway groupings
-        self.group_labels = None    # Custom group labels        # Enhanced color schemes with better contrast
-        self.color_schemes = {
-            'blue_pink_violet': ['#F8BBD9', '#4FC3F7', '#2196F3', '#673AB7', '#4A148C'],
-            'viridis': ['#440154', '#31688e', '#35b779', '#fde725'],
-            'plasma': ['#0d0887', '#6a00a8', '#b12a90', '#e16462', '#fca636', '#f0f921'],
-            'red_yellow': ['#ffffff', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c', '#fc4e2a', '#e31a1c', '#b10026'],
-            'blue_white_red': ['#053061', '#2166ac', '#4393c3', '#92c5de', '#d1e5f0', '#f7f7f7', '#fddbc7', '#f4a582', '#d6604d', '#b2182b', '#67001f'],
-            'green_blue': ['#f7fcf0', '#e0f3db', '#ccebc5', '#a8ddb5', '#7bccc4', '#4eb3d3', '#2b8cbe', '#0868ac', '#084081']
-        }
-        
-    def _create_colormap(self, scheme_name: str = 'blue_pink_violet') -> LinearSegmentedColormap:
-        """Create custom colormap from predefined schemes"""
-        if scheme_name not in self.color_schemes:
-            scheme_name = 'blue_pink_violet'
-        
-        colors = self.color_schemes[scheme_name]
-        return LinearSegmentedColormap.from_list(f'{scheme_name}_custom', colors, N=256)
+        self.group_labels = None    # Custom group labels
+        # Updated color scheme: light pink -> light blue -> deep violet
+        self.color_scheme = ['#FFEBEE', '#E3F2FD', '#B39DDB', '#673AB7', '#4527A0', '#311B92'] 
+    
+    def _create_colormap(self) -> LinearSegmentedColormap:
+        """Create custom colormap from the single pink-blue-violet scheme"""
+        return LinearSegmentedColormap.from_list('pink_blue_violet', self.color_scheme, N=256)
         
     def load_files(self, file_paths: List[str], genus_names: Optional[List[str]] = None):
         """Load multiple TSV files, one per genus with enhanced error handling"""
@@ -103,7 +93,7 @@ class MetabolicHeatmapGenerator:
                 df['completeness'] = df['completeness'].clip(0, 100)
                 
                 self.data[genus_name] = df
-                print(f"✅ Loaded {len(df)} pathways for {genus_name}")
+                print(f" Loaded {len(df)} pathways for {genus_name}")
                 
             except Exception as e:
                 print(f" Error loading {file_path}: {e}")
@@ -121,10 +111,11 @@ class MetabolicHeatmapGenerator:
                     data = json.load(f)
                     if 'groups' in data:
                         self.pathway_groups = data['groups']
+                    # else: # This was part of the original logic structure, but could be added if direct dict support is needed
+                        # if isinstance(data, dict) and all(isinstance(v, list) for v in data.values()):
+                        #    self.pathway_groups = data
                     if 'labels' in data:
                         self.group_labels = data['labels']
-                    else:
-                        self.pathway_groups = data
                         
             else:
                 # Load from text file format:
@@ -141,7 +132,7 @@ class MetabolicHeatmapGenerator:
                         line = line.strip()
                         if not line or line.startswith('#'):
                             continue
-                            
+                        
                         if line.endswith(':'):
                             current_group = line[:-1].strip()
                             groups[current_group] = []
@@ -185,18 +176,19 @@ class MetabolicHeatmapGenerator:
             
         self.genus_order = valid_order
         print(f" Genus order set: {' → '.join(self.genus_order)}")
-        
     def set_pathway_order(self, order: List[str]):
         """Set custom order for pathways on Y-axis"""
         self.pathway_order = order
         print(f" Custom pathway order set ({len(order)} pathways)")
-
+        
     def _get_pathway_group(self, pathway_id: str, pathway_name: str) -> str:
-
         """Determine pathway group based on manual groupings"""
         if self.pathway_groups:
+            # First try with just the module ID (for JSON format groups)
             for group_name, pathway_list in self.pathway_groups.items():
-                if pathway_id in pathway_list or pathway_name in pathway_list:
+                # Extract just the module ID if it's in format "MXXXXX: Description"
+                clean_id = pathway_id.split(':')[0].strip() if ':' in pathway_id else pathway_id
+                if clean_id in pathway_list or pathway_id in pathway_list or pathway_name in pathway_list:
                     return group_name
           # Fallback to class from data
         for genus_data in self.data.values():
@@ -256,23 +248,20 @@ class MetabolicHeatmapGenerator:
         """Prepare data matrix for heatmap with manual grouping"""
         if not self.data:
             raise ValueError("No data loaded. Please load TSV files first.")        # Collect all pathways that meet threshold in at least one genus
+        # Custom: Only include modules that are at least 50% complete in at least one genus
+        # and respect the grouping from the JSON
+        # Collect all pathways and their max completeness
         pathway_info = {}
         pathway_groups = defaultdict(list)
-        
-        # First pass: collect all pathways and find max completeness across all genera
         all_pathways = {}  # pathway_id -> {genus: completeness, ...}
-        
         for genus_name, df in self.data.items():
             for _, row in df.iterrows():
                 completeness = float(row.get('completeness', 0))
                 pathway_id = row.get('module_accession', '')
                 pathway_name = row.get('pathway_name', pathway_id)
-                
                 if pathway_id not in all_pathways:
                     all_pathways[pathway_id] = {}
                 all_pathways[pathway_id][genus_name] = completeness
-                
-                # Store pathway info if not already done
                 if pathway_id not in pathway_info:
                     pathway_info[pathway_id] = {
                         'name': pathway_name,
@@ -281,79 +270,39 @@ class MetabolicHeatmapGenerator:
                         'max_completeness': completeness
                     }
                 else:
-                    # Update max completeness across all genera
                     pathway_info[pathway_id]['max_completeness'] = max(
-                        pathway_info[pathway_id]['max_completeness'], 
-                        completeness
-                    )
-        
-        # Second pass: include pathways where at least one genus meets threshold
-        pathways_to_include = set()
+                        pathway_info[pathway_id]['max_completeness'], completeness)
+        # Only include modules that are >= 50% in at least one genus
+        modules_to_include = set()
         for pathway_id, genus_completeness in all_pathways.items():
-            max_completeness_across_genera = max(genus_completeness.values())
-            if max_completeness_across_genera >= self.completeness_threshold:
-                pathways_to_include.add(pathway_id)
-                pathway_groups[pathway_info[pathway_id]['group']].append(pathway_id)
-        
-        print(f" Including {len(pathways_to_include)} pathways where at least one genus has ≥{self.completeness_threshold}% completeness")
-          # Sort pathways within groups by completeness (descending) then by module ID
-        for group in pathway_groups:
-            pathway_groups[group].sort(
-                key=lambda x: (-pathway_info[x]['max_completeness'], x),  # Sort by completeness desc, then module ID asc
-                reverse=False  # Because we're using negative completeness for desc order
-            )
-        
-        # Create ordered pathway list
-        if self.pathway_order:
-            # Use custom order
-            pathways_list = []
-            used_pathways = set()
-            
-            for pathway_ref in self.pathway_order:
-                # Match by ID or name
-                matched_pathway = None
-                for pathway_id in pathway_info:
-                    if (pathway_id == pathway_ref or 
-                        pathway_info[pathway_id]['name'] == pathway_ref or
-                        pathway_info[pathway_id]['short_name'] == pathway_ref):
-                        matched_pathway = pathway_id
-                        break
-                
-                if matched_pathway and matched_pathway not in used_pathways:
-                    pathways_list.append(matched_pathway)
-                    used_pathways.add(matched_pathway)
-            
-            # Add remaining pathways
-            remaining = set(pathway_info.keys()) - used_pathways
-            if group_by_class and self.pathway_groups:
-                # Add by group order
-                group_order = list(self.pathway_groups.keys()) if self.pathway_groups else sorted(pathway_groups.keys())
-                for group in group_order:
-                    for pathway_id in pathway_groups[group]:
-                        if pathway_id in remaining:
-                            pathways_list.append(pathway_id)
-                            remaining.remove(pathway_id)
-              # Add any remaining pathways sorted by completeness then module ID
-            pathways_list.extend(sorted(remaining, key=lambda x: (-pathway_info[x]['max_completeness'], x)))
-              else:
-            # Default ordering by groups
-            pathways_list = []
-            if group_by_class:
-                group_order = list(self.pathway_groups.keys()) if self.pathway_groups else sorted(pathway_groups.keys())
-                for group in group_order:
-                    pathways_list.extend(pathway_groups[group])
-            else:
-                # Sort by completeness (desc) then module ID (asc) for better readability
-                pathways_list = sorted(pathway_info.keys(), 
-                    key=lambda x: (-pathway_info[x]['max_completeness'], x))
-        
-        # Set genus order
+            if max(genus_completeness.values()) >= 50:
+                modules_to_include.add(pathway_id)        # Respect the grouping from the JSON
+        grouped_modules = []
+        if self.pathway_groups:
+            for group in self.pathway_groups:
+                for pid in self.pathway_groups[group]:
+                    # Look for matching modules in modules_to_include
+                    # Check both exact match and just the module ID part
+                    matching_modules = [m for m in modules_to_include if 
+                                      m == pid or 
+                                      m.split(':')[0].strip() == pid]
+                    for module in matching_modules:
+                        if module not in grouped_modules:
+                            grouped_modules.append(module)
+        # Add any remaining modules that meet the threshold but are not in a group
+        for pid in modules_to_include:
+            if pid not in grouped_modules:
+                grouped_modules.append(pid)
+        # Ask user for confirmation before generating SVG
+        print("The following modules will be included in the heatmap (at least 50% complete in one genus):")
+        for pid in grouped_modules:
+            print(f"{pid}: {pathway_info[pid]['name']}")
+        input("Press Enter to continue and generate the SVG, or Ctrl+C to abort...")
+        # Now build the matrix as before, but only for grouped_modules
         genera_list = self.genus_order or sorted(self.data.keys())
-          # Create data matrix
         matrix_data = []
         pathway_labels = []
-        
-        for pathway_id in pathways_list:
+        for pathway_id in grouped_modules:
             row_data = []
             for genus in genera_list:
                 if genus in self.data:
@@ -361,38 +310,41 @@ class MetabolicHeatmapGenerator:
                     pathway_row = genus_df[genus_df['module_accession'] == pathway_id]
                     if not pathway_row.empty:
                         completeness = float(pathway_row.iloc[0]['completeness'])
-                        row_data.append(completeness)  # Show all values, not just above threshold
-                    else:
+                        row_data.append(completeness)                    
+                        else:
+                        
                         row_data.append(np.nan)
                 else:
                     row_data.append(np.nan)
-            
             matrix_data.append(row_data)
+            # Use the formatted short_name as the label but keep track of the original module ID for grouping
             pathway_labels.append(pathway_info[pathway_id]['short_name'])
-        
-        # Create DataFrame
         heatmap_df = pd.DataFrame(matrix_data, index=pathway_labels, columns=genera_list)
         
         # Create group positions for separators
         group_positions = {}
         if group_by_class:
             current_group = None
-            for i, pathway_id in enumerate(pathways_list):
-                pathway_group = pathway_info[pathway_id]['group']
-                if pathway_group != current_group:
+            for i, pathway_label in enumerate(pathway_labels):
+                # Get the original module ID from the formatted label
+                module_id = pathway_label.split(':', 1)[0].strip()
+                pathway_group = pathway_info[module_id]['group']                if pathway_group != current_group:
                     if current_group is not None:
                         if current_group not in group_positions:
                             group_positions[current_group] = []
-                        group_positions[pathway_group] = [i]
+                        if pathway_group not in group_positions:
+                            group_positions[pathway_group] = []
+                        group_positions[pathway_group].append(i)
                     else:
-                        group_positions[pathway_group] = [i]
+                        if pathway_group not in group_positions:
+                            group_positions[pathway_group] = []
+                        group_positions[pathway_group].append(i)
                     current_group = pathway_group
         
         return heatmap_df, pathway_labels, group_positions
         
     def create_heatmap(self, 
                       figsize: Tuple[int, int] = (12, 16),
-                      color_scheme: str = 'blue_pink_violet',
                       group_by_class: bool = True,
                       show_group_separators: bool = True,
                       show_group_labels: bool = True,
@@ -412,13 +364,13 @@ class MetabolicHeatmapGenerator:
                 'colorbar': 10,
                 'group_labels': 9
             }
-        
-        # Prepare data
+          # Prepare data
         heatmap_df, pathway_labels, group_positions = self.prepare_data(group_by_class=group_by_class)
         
         if heatmap_df.empty:
             raise ValueError("No pathways meet the completeness threshold")
-              print(f" Creating heatmap with {len(heatmap_df)} pathways and {len(heatmap_df.columns)} genera")
+            
+        print(f" Creating heatmap with {len(heatmap_df)} pathways and {len(heatmap_df.columns)} genera")
         
         # Calculate square cell dimensions based on number of pathways and genera
         n_pathways = len(heatmap_df)
@@ -433,9 +385,8 @@ class MetabolicHeatmapGenerator:
             fig_width += 3  # Extra space for group labels
             
         fig, ax = plt.subplots(figsize=(fig_width, fig_height), facecolor='white')
-        
-        # Create heatmap
-        cmap = self._create_colormap(color_scheme)
+          # Create heatmap
+        cmap = self._create_colormap()
         
         # Create mask for missing values
         mask = heatmap_df.isna()        # Plot heatmap with square aspect ratio
@@ -503,7 +454,7 @@ class MetabolicHeatmapGenerator:
         ax.set_xlabel('Genera', fontsize=font_size['xlabel'], fontweight='bold')
         ax.set_ylabel('Metabolic Pathways', fontsize=font_size['ylabel'], fontweight='bold')
         
-        title = f'Metabolic Pathway Completeness Comparison\n(Threshold: ≥{self.completeness_threshold}%)'
+        title = 'Metabolic Pathway Completeness Comparison'
         ax.set_title(title, fontsize=font_size['title'], fontweight='bold', pad=20)
         
         # Adjust layout
@@ -525,7 +476,7 @@ class MetabolicHeatmapGenerator:
                        facecolor='white',
                        edgecolor='none')
             
-            print(f"💾 Heatmap saved to {save_path} (optimized for Inkscape)")
+            print(f" Heatmap saved to {save_path} (optimized for Inkscape)")
         
         return fig
     
@@ -552,46 +503,6 @@ class MetabolicHeatmapGenerator:
         
         print(f"Exported {len(pathways)} pathways to {output_file}")
         
-    def print_summary(self):
-        """Print comprehensive summary statistics"""
-        if not self.data:
-            print(" No data loaded")
-            return
-            
-        print(f"\n{'='*60}")
-        print(" METABOLIC PATHWAY ANALYSIS SUMMARY")
-        print(f"{'='*60}")
-        print(f" Number of genera: {len(self.data)}")
-        print(f" Completeness threshold: {self.completeness_threshold}%")
-        print(f" Available color schemes: {list(self.color_schemes.keys())}")
-        
-        if self.pathway_groups:
-            print(f"📋 Manual pathway groups: {len(self.pathway_groups)}")
-            for group, pathways in self.pathway_groups.items():
-                display_label = self.group_labels.get(group, group) if self.group_labels else group
-                print(f"  • {display_label}: {len(pathways)} pathways")
-        
-        print("\nPer-genus statistics:")
-        all_pathways = set()
-        
-        for genus_name, df in self.data.items():
-            total_pathways = len(df)
-            above_threshold = sum(1 for _, row in df.iterrows() 
-                                if float(row.get('completeness', 0)) >= self.completeness_threshold)
-            avg_completeness = df['completeness'].mean()
-            
-            print(f"  • {genus_name}: {total_pathways} total, {above_threshold} above threshold "
-                  f"(avg: {avg_completeness:.1f}%)")
-            
-            all_pathways.update(df['module_accession'].tolist())
-            
-        print(f"\n Total unique pathways: {len(all_pathways)}")
-        
-        if self.genus_order:
-            print(f" Genus order: {' → '.join(self.genus_order)}")
-        
-        if self.pathway_order:
-            print(f" Custom pathway order: {len(self.pathway_order)} pathways specified")
 
 def main():
     parser = argparse.ArgumentParser(
@@ -619,15 +530,12 @@ Examples:
                        help='Completeness threshold percentage (default: 75)')
     parser.add_argument('--order', nargs='+', help='Custom order for genera on X-axis')
     parser.add_argument('--pathway-order', nargs='+', help='Custom order for pathways on Y-axis')
-    parser.add_argument('--groups', help='Pathway groups file (JSON or text format)')
+    parser.add_argument('--groups', help='Pathway groups file (JSON or text format)', default="c:\\Users\\mlazar\\Desktop\\heatmapper_script\\kegg_module_groups_from_image.json")
     parser.add_argument('--export-pathways', help='Export pathway list to file for manual grouping')
     parser.add_argument('--output', '-o', default='metabolic_heatmap.svg', 
                        help='Output filename (default: metabolic_heatmap.svg)')
     parser.add_argument('--figsize', nargs=2, type=int, default=[12, 16], 
                        help='Figure size in inches (width height)')
-    parser.add_argument('--scheme', default='blue_pink_violet', 
-                       choices=['blue_pink_violet', 'viridis', 'plasma', 'cool_warm', 'nature', 'magma'],
-                       help='Color scheme (default: blue_pink_violet)')
     parser.add_argument('--no-grouping', action='store_true', 
                        help='Disable grouping by pathway class')
     parser.add_argument('--no-separators', action='store_true', 
@@ -674,14 +582,10 @@ Examples:
         'group_labels': int(9 * args.font_scale)
     }
     
-    # Print summary
-    generator.print_summary()
-    
-    # Create heatmap
+      # Create heatmap
     try:
         fig = generator.create_heatmap(
             figsize=tuple(args.figsize),
-            color_scheme=args.scheme,
             group_by_class=not args.no_grouping,
             show_group_separators=not args.no_separators,
             show_group_labels=not args.no_labels,

@@ -1,0 +1,57 @@
+module_group,module_info,Oleothermococcus,Palaeococcus,Piezococcus,Pyrococcus,Thermococcales,Thermococcus
+Amino acids,M00015: Proline biosynthesis,,50.0,50.0,,,
+Amino acids,M00017: Methionine biosynthesis,14.29,71.43,57.14,28.57,14.29,14.29
+Amino acids,M00018: Threonine biosynthesis,40.0,80.0,80.0,60.0,40.0,40.0
+Amino acids,M00019: Valine/isoleucine biosynthesis,,,,62.5,,
+Amino acids,M00020: Serine biosynthesis,66.67,66.67,66.67,33.33,66.67,66.67
+Amino acids,M00022: Shikimate pathway,,81.25,81.25,31.25,,
+Amino acids,M00023: Tryptophan biosynthesis,,16.67,16.67,66.67,16.67,16.67
+Amino acids,M00026: Histidine biosynthesis,5.56,75.0,75.0,,,
+Amino acids,M00029: Urea cycle,40.0,60.0,20.0,20.0,20.0,20.0
+Amino acids,M00031: Lysine biosynthesis,,80.0,,80.0,,
+Amino acids,M00035: Methionine degradation,50.0,75.0,100.0,75.0,50.0,50.0
+Amino acids,M00133: Polyamine biosynthesis,100.0,100.0,100.0,100.0,100.0,100.0
+Amino acids,M00134: Polyamine biosynthesis,100.0,,,,,
+Amino acids,M00338: Cysteine biosynthesis,,100.0,100.0,,,
+Amino acids,M00432: Leucine biosynthesis,,16.67,,100.0,,
+Amino acids,M00535: Isoleucine biosynthesis,,16.67,,66.67,,
+Amino acids,M00570: Isoleucine biosynthesis,,,,50.0,,
+Amino acids,M00763: Ornithine biosynthesis,,80.0,,80.0,,
+Amino acids,M00844: Arginine biosynthesis,33.33,100.0,33.33,33.33,33.33,33.33
+Carbohydrate metabolism,M00001: Glycolysis (Embden-Meyerhof pathway),100.0,100.0,100.0,100.0,100.0,100.0
+Carbohydrate metabolism,M00002: Glycolysis,100.0,100.0,100.0,100.0,100.0,100.0
+Carbohydrate metabolism,M00003: Gluconeogenesis,100.0,100.0,100.0,100.0,100.0,100.0
+Carbohydrate metabolism,M00307: Pyruvate oxidation,100.0,100.0,100.0,100.0,100.0,100.0
+Carbohydrate metabolism,M00632: Galactose degradation,75.0,50.0,75.0,25.0,25.0,25.0
+Carbohydrate metabolism,M00741: Propanoyl-CoA metabolism,66.67,83.33,66.67,66.67,83.33,83.33
+Carbohydrate metabolism,M00854: Glycogen biosynthesis,75.0,100.0,75.0,75.0,75.0,75.0
+Carbohydrate metabolism,M00855: Glycogen degradation,50.0,50.0,50.0,33.33,50.0,50.0
+Nucleotide metabolism,M00005: PRPP biosynthesis,100.0,100.0,100.0,100.0,100.0,100.0
+Nucleotide metabolism,M00048: De novo purine biosynthesis,100.0,100.0,43.75,93.75,93.75,93.75
+Nucleotide metabolism,M00049: Adenine ribonucleotide biosynthesis,100.0,100.0,100.0,100.0,100.0,100.0
+Nucleotide metabolism,M00050: Guanine ribonucleotide biosynthesis,75.0,75.0,50.0,50.0,50.0,50.0
+Nucleotide metabolism,M00051: De novo pyrimidine biosynthesis,88.89,77.78,77.78,88.89,77.78,77.78
+Nucleotide metabolism,M00052: Pyrimidine ribonucleotide biosynthesis,100.0,100.0,100.0,100.0,100.0,100.0
+Nucleotide metabolism,M00053: Deoxyribonucleotide biosynthesis,50.0,75.0,75.0,50.0,75.0,50.0
+Nucleotide metabolism,M00554: Nucleotide sugar biosynthesis,100.0,50.0,100.0,,,
+Nucleotide metabolism,M00793: dTDP-L-rhamnose biosynthesis,,100.0,16.67,,,
+Nucleotide metabolism,M00938: Pyrimidine deoxyribonucleotide biosynthesis,60.0,70.0,70.0,40.0,70.0,60.0
+Nucleotide metabolism,M00968: Pentose bisphosphate pathway (nucleoside degradation),100.0,100.0,100.0,100.0,100.0,100.0
+Vitamin and cofactor biosynthesis,M00880: Molybdenum cofactor biosynthesis,100.0,100.0,100.0,100.0,100.0,100.0
+Vitamin and cofactor biosynthesis,M00896: Thiamine biosynthesis,50.0,100.0,33.33,83.33,83.33,100.0
+Vitamin and cofactor biosynthesis,M00914: Coenzyme A biosynthesis,85.71,85.71,85.71,71.43,85.71,85.71
+Lipid metabolism,M00091: Phosphatidylcholine (PC) biosynthesis,,100.0,100.0,,,
+Lipid metabolism,M00365: C10-C20 isoprenoid biosynthesis,50.0,50.0,50.0,50.0,50.0,100.0
+Energy metabolism,M00159: V/A-type ATPase,100.0,100.0,100.0,88.89,100.0,100.0
+Energy metabolism,M00986: Sulfur reduction,100.0,100.0,100.0,100.0,100.0,100.0
+Biosynthesis of cofactors and polyketides,M00115: NAD biosynthesis,60.0,60.0,20.0,60.0,60.0,60.0
+Biosynthesis of cofactors and polyketides,M00120: Coenzyme A biosynthesis,50.0,50.0,50.0,50.0,50.0,50.0
+Biosynthesis of cofactors and polyketides,M00125: Riboflavin biosynthesis,,77.78,,,,
+Biosynthesis of cofactors and polyketides,M00364: C10-C20 isoprenoid biosynthesis,50.0,50.0,50.0,50.0,50.0,100.0
+Biosynthesis of cofactors and polyketides,M00899: Thiamine salvage pathway,100.0,100.0,100.0,100.0,,50.0
+Biosynthesis of cofactors and polyketides,M00916: Pyridoxal-P biosynthesis,100.0,100.0,,100.0,100.0,100.0
+Archaea-specific metabolism,M00141: C1-unit interconversion,50.0,50.0,50.0,50.0,50.0,50.0
+Archaea-specific metabolism,M00168: CAM (Crassulacean acid metabolism),50.0,50.0,50.0,50.0,,
+Archaea-specific metabolism,M00580: Pentose phosphate pathway,100.0,100.0,100.0,100.0,100.0,100.0
+Archaea-specific metabolism,M00620: Incomplete reductive citrate cycle,50.0,50.0,50.0,28.57,35.71,35.71
+Archaea-specific metabolism,M00849: C5 isoprenoid biosynthesis,50.0,50.0,50.0,50.0,50.0,66.67
