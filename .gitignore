@@ -1,2 +1,4 @@
-# Ignore all CSV files
+# Ignore all CSV, SVG, and PDF files
 *.csv
+*.svg
+*.pdf
