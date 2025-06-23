@@ -37,19 +37,19 @@ Nucleotide metabolism,M00554: Nucleotide sugar biosynthesis,100.0,50.0,100.0,,,
 Nucleotide metabolism,M00793: dTDP-L-rhamnose biosynthesis,,100.0,16.67,,,
 Nucleotide metabolism,M00938: Pyrimidine deoxyribonucleotide biosynthesis,60.0,70.0,70.0,40.0,70.0,60.0
 Nucleotide metabolism,M00968: Pentose bisphosphate pathway (nucleoside degradation),100.0,100.0,100.0,100.0,100.0,100.0
-Vitamin and cofactor biosynthesis,M00880: Molybdenum cofactor biosynthesis,100.0,100.0,100.0,100.0,100.0,100.0
-Vitamin and cofactor biosynthesis,M00896: Thiamine biosynthesis,50.0,100.0,33.33,83.33,83.33,100.0
-Vitamin and cofactor biosynthesis,M00914: Coenzyme A biosynthesis,85.71,85.71,85.71,71.43,85.71,85.71
 Lipid metabolism,M00091: Phosphatidylcholine (PC) biosynthesis,,100.0,100.0,,,
 Lipid metabolism,M00365: C10-C20 isoprenoid biosynthesis,50.0,50.0,50.0,50.0,50.0,100.0
 Energy metabolism,M00159: V/A-type ATPase,100.0,100.0,100.0,88.89,100.0,100.0
 Energy metabolism,M00986: Sulfur reduction,100.0,100.0,100.0,100.0,100.0,100.0
-Biosynthesis of cofactors and polyketides,M00115: NAD biosynthesis,60.0,60.0,20.0,60.0,60.0,60.0
-Biosynthesis of cofactors and polyketides,M00120: Coenzyme A biosynthesis,50.0,50.0,50.0,50.0,50.0,50.0
-Biosynthesis of cofactors and polyketides,M00125: Riboflavin biosynthesis,,77.78,,,,
-Biosynthesis of cofactors and polyketides,M00364: C10-C20 isoprenoid biosynthesis,50.0,50.0,50.0,50.0,50.0,100.0
-Biosynthesis of cofactors and polyketides,M00899: Thiamine salvage pathway,100.0,100.0,100.0,100.0,,50.0
-Biosynthesis of cofactors and polyketides,M00916: Pyridoxal-P biosynthesis,100.0,100.0,,100.0,100.0,100.0
+"Biosynthesis of Vitamins, Cofactors and polyketides",M00115: NAD biosynthesis,60.0,60.0,20.0,60.0,60.0,60.0
+"Biosynthesis of Vitamins, Cofactors and polyketides",M00120: Coenzyme A biosynthesis,50.0,50.0,50.0,50.0,50.0,50.0
+"Biosynthesis of Vitamins, Cofactors and polyketides",M00125: Riboflavin biosynthesis,,77.78,,,,
+"Biosynthesis of Vitamins, Cofactors and polyketides",M00364: C10-C20 isoprenoid biosynthesis,50.0,50.0,50.0,50.0,50.0,100.0
+"Biosynthesis of Vitamins, Cofactors and polyketides",M00880: Molybdenum cofactor biosynthesis,100.0,100.0,100.0,100.0,100.0,100.0
+"Biosynthesis of Vitamins, Cofactors and polyketides",M00896: Thiamine biosynthesis,50.0,100.0,33.33,83.33,83.33,100.0
+"Biosynthesis of Vitamins, Cofactors and polyketides",M00899: Thiamine salvage pathway,100.0,100.0,100.0,100.0,,50.0
+"Biosynthesis of Vitamins, Cofactors and polyketides",M00914: Coenzyme A biosynthesis,85.71,85.71,85.71,71.43,85.71,85.71
+"Biosynthesis of Vitamins, Cofactors and polyketides",M00916: Pyridoxal-P biosynthesis,100.0,100.0,,100.0,100.0,100.0
 Archaea-specific metabolism,M00141: C1-unit interconversion,50.0,50.0,50.0,50.0,50.0,50.0
 Archaea-specific metabolism,M00168: CAM (Crassulacean acid metabolism),50.0,50.0,50.0,50.0,,
 Archaea-specific metabolism,M00580: Pentose phosphate pathway,100.0,100.0,100.0,100.0,100.0,100.0

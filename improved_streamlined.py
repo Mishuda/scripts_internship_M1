@@ -150,7 +150,7 @@ def create_heatmap(pivot_df, output_file=None, figsize=None, title=None, transpo
     plt.figure(figsize=figsize)
     
     # Custom color scheme
-    color_scheme = [ '#B39DDB', '#673AB7', '#4527A0', '#311B92']
+    color_scheme = [ '#B39DDB', "#8D68CE", "#614D9B", '#311B92']
     custom_cmap = LinearSegmentedColormap.from_list("custom_cmap", color_scheme)
     custom_cmap.set_bad(color='#BDBDBD')  # Gray for masked values
     ax = sns.heatmap(
@@ -170,8 +170,13 @@ def create_heatmap(pivot_df, output_file=None, figsize=None, title=None, transpo
     
     # Add title and labels
     plt.title(title or "Module Completeness Across Samples", fontsize=14, pad=20)
-    plt.ylabel("Modules", fontsize=12)
-    plt.xlabel("Samples", fontsize=12)
+    # Set axis labels depending on transpose
+    if transpose:
+        plt.xlabel("Modules", fontsize=12)
+        plt.ylabel("Samples", fontsize=12)
+    else:
+        plt.ylabel("Modules", fontsize=12)
+        plt.xlabel("Samples", fontsize=12)
     
     # Rotate x-axis labels
     plt.xticks(rotation=45, ha='right')
@@ -184,10 +189,11 @@ def create_heatmap(pivot_df, output_file=None, figsize=None, title=None, transpo
     if output_file:
         plt.savefig(output_file, dpi=300, format='svg', bbox_inches='tight')
         print(f"Heatmap saved to {output_file} (SVG format)")
-    
-    # Show the plot
+        # Also save as PDF
+        pdf_file = str(Path(output_file).with_suffix('.pdf'))
+        plt.savefig(pdf_file, dpi=300, format='pdf', bbox_inches='tight')
+        print(f"Heatmap also saved to {pdf_file} (PDF format)")
     plt.show()
-    
     return plt.gcf()
 
 def main():
