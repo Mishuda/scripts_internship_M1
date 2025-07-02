@@ -18,7 +18,28 @@ from pathlib import Path
 import json
 from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
+from datetime import datetime
 
+import matplotlib as mpl
+mpl.rcParams['svg.fonttype'] = 'none'  # <-- disables path conversion
+
+
+def create_output_folder():
+    """Create a timestamped output folder for this run"""
+    # Get current date and time
+    now = datetime.now()
+    date_str = now.strftime("%Y%m%d")
+    time_str = now.strftime("%H%M%S")
+    
+    # Create base output directory name
+    base_name = f"output_{date_str}_{time_str}"
+    output_dir = Path("outputs") / base_name
+    
+    # Create the directory
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    print(f"Created output folder: {output_dir}")
+    return output_dir
 
 def load_tsv_files(file_paths, sample_names=None):
     """Load multiple TSV files from standard tool output"""
@@ -102,18 +123,27 @@ def create_pivot_table(df, min_completeness=50, group_order=None):
     # Filter the dataframe
     filtered_df = df[df['module_accession'].isin(modules_to_include)]
     
-    # Create the pivot table
+    # Create the pivot table with only module_info as index (no group names shown)
     pivot_df = filtered_df.pivot_table(
-        index=['module_group', 'module_info'],
+        index='module_info',
         columns='sample',
         values='completeness'
     )
     
-    # Sort by group and mean completeness within group
+    # Sort by group order but don't show group names
     if group_order is None:
         group_order = filtered_df['module_group'].drop_duplicates().tolist()
-    pivot_df = pivot_df.sort_index(level=1, ascending=False)  # sort by module_info
-    pivot_df = pivot_df.sort_index(level=0, key=lambda x: [group_order.index(g) if g in group_order else len(group_order) for g in x])
+    
+    # Create a temporary dataframe with both group and module info for sorting
+    temp_df = filtered_df[['module_group', 'module_info']].drop_duplicates()
+    temp_df['group_order'] = temp_df['module_group'].apply(
+        lambda x: group_order.index(x) if x in group_order else len(group_order)
+    )
+    temp_df = temp_df.sort_values(['group_order', 'module_info'])
+    
+    # Reorder the pivot table based on the sorted module order
+    ordered_modules = temp_df['module_info'].tolist()
+    pivot_df = pivot_df.reindex([m for m in ordered_modules if m in pivot_df.index])
     
     print(f"Created pivot table with {len(pivot_df)} modules × {len(pivot_df.columns)} samples")
     return pivot_df
@@ -215,6 +245,9 @@ def main():
     
     # Process the data
     try:
+        # 0. Create timestamped output folder
+        output_dir = create_output_folder()
+        
         # 1. Load the data from TSV files
         combined_df = load_tsv_files(args.files, args.names)
         
@@ -233,14 +266,17 @@ def main():
         
         # 4. Create and show heatmap
         figsize = tuple(args.figsize) if args.figsize else None
-        create_heatmap(pivot_df, args.output, figsize, args.title, transpose=args.transpose)
+        # Save output files in the timestamped folder
+        output_file = output_dir / args.output
+        create_heatmap(pivot_df, output_file, figsize, args.title, transpose=args.transpose)
         
         # 5. Save the data
-        data_file = Path(args.output).with_suffix('.csv')
+        data_file = output_dir / Path(args.output).with_suffix('.csv')
         pivot_df.to_csv(data_file)
         print(f"Heatmap data saved to {data_file}")
         
-        print("Heatmap generation completed successfully!")
+        print(f"Heatmap generation completed successfully!")
+        print(f"All files saved in: {output_dir}")
         
     except Exception as e:
         print(f"Error: {e}")

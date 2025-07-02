@@ -30,7 +30,7 @@
       "M00570",
       "M00609"
     ],
-    "Carbohydrate metabolism": [
+    "Carbohydrates": [
       "M00001",
       "M00002",
       "M00003",
@@ -53,7 +53,7 @@
       "M00855",
       "M009-9"
     ],
-    "Nucleotide metabolism": [
+    "Nucleotides": [
       "M00005",
       "M00048",
       "M00049",
@@ -68,8 +68,7 @@
       "M00958",
       "M00959"
     ],
-  
-    "Lipid metabolism": [
+    "Lipids": [
       "M00091",
       "M00364",
       "M00365",
@@ -79,11 +78,11 @@
       "M00090",
       "M00093"
     ],
-    "Energy metabolism": [
+    "Energy": [
       "M00159",
       "M00986"
     ],
-    "Biosynthesis of Vitamins, Cofactors and polyketides": [
+    "Vitamins, Cofactors and polyketides": [
       "M00095",
       "M00115",
       "M00116",
@@ -112,15 +111,5 @@
       "M00141",
       "M00168"
     ]
-  },
-  "labels": {
-    "Amino acids": "Amino acid metabolism (branched-chain, cysteine, methionine, polyamine, serine, threonine, and more)",
-    "Carbohydrate metabolism": "Carbohydrate metabolism (glycolysis, pentose phosphate, and related pathways)",
-    "Nucleotide metabolism": "Nucleotide metabolism (purine, pyrimidine, nucleotide sugar, and related)",
-    "Lipid metabolism": "Lipid metabolism (fatty acid, phospholipid, and related)",
-    "Energy metabolism": "Energy metabolism (electron transport, sulfur reduction, and related)",
-    "Biosynthesis of Vitamins, Cofactors and polyketides": "Biosynthesis of vitamins, cofactors, and polyketides",
-    "Archaea-specific metabolism": "Archaea-specific metabolism (unique archaeal pathways)",
-    "Secondary metabolism": "Secondary metabolism (specialized metabolites)"
   }
 }

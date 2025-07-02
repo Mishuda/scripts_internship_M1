@@ -1,0 +1,95 @@
+module_accession	completeness	pathway_name
+M00001	100.0	Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate
+M00002	100.0	Glycolysis, core module involving three-carbon compounds
+M00003	100.0	Gluconeogenesis, oxaloacetate => fructose-6P
+M00005	100.0	PRPP biosynthesis, ribose 5P => PRPP
+M00049	100.0	Adenine ribonucleotide biosynthesis, IMP => ADP,ATP
+M00052	100.0	Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP
+M00133	100.0	Polyamine biosynthesis, arginine => agmatine => putrescine => spermidine
+M00159	100.0	V/A-type ATPase, prokaryotes
+M00307	100.0	Pyruvate oxidation, pyruvate => acetyl-CoA
+M00580	100.0	Pentose phosphate pathway, archaea, fructose 6P => ribose 5P
+M00880	100.0	Molybdenum cofactor biosynthesis, GTP => molybdenum cofactor
+M00916	100.0	Pyridoxal-P biosynthesis, R5P + glyceraldehyde-3P + glutamine => pyridoxal-P
+M00968	100.0	Pentose bisphosphate pathway (nucleoside degradation), archaea, nucleoside/NMP => 3-PGA/glycerone phosphate
+M00986	100.0	Sulfur reduction, sulfur => sulfide
+M00048	93.75	De novo purine biosynthesis, PRPP + glutamine => IMP
+M00914	85.71	Coenzyme A biosynthesis, archaea, 2-oxoisovalerate => 4-phosphopantoate => CoA
+M00741	83.33	Propanoyl-CoA metabolism, propanoyl-CoA => succinyl-CoA
+M00896	83.33	Thiamine biosynthesis, archaea, AIR (+ NAD+) => TMP/TPP
+M00051	77.78	De novo pyrimidine biosynthesis, glutamine (+ PRPP) => UMP
+M00053	75.0	Deoxyribonucleotide biosynthesis, ADP/GDP/CDP/UDP => dATP/dGTP/dCTP/dUTP
+M00854	75.0	Glycogen biosynthesis, glucose-1P => glycogen/starch
+M00938	70.0	Pyrimidine deoxyribonucleotide biosynthesis, UDP => dTTP
+M00020	66.67	Serine biosynthesis, glycerate-3P => serine
+M00621	66.67	Glycine cleavage system
+M00034	62.5	Methionine salvage pathway
+M00115	60.0	NAD biosynthesis, aspartate => quinolinate => NAD
+M00122	58.33	Cobalamin biosynthesis, cobyrinate a,c-diamide => cobalamin
+M00035	50.0	Methionine degradation
+M00050	50.0	Guanine ribonucleotide biosynthesis, IMP => GDP,GTP
+M00098	50.0	Acylglycerol degradation
+M00120	50.0	Coenzyme A biosynthesis, pantothenate => CoA
+M00141	50.0	C1-unit interconversion, eukaryotes
+M00364	50.0	C10-C20 isoprenoid biosynthesis, bacteria
+M00365	50.0	C10-C20 isoprenoid biosynthesis, archaea
+M00849	50.0	C5 isoprenoid biosynthesis, mevalonate pathway, archaea
+M00855	50.0	Glycogen degradation, glycogen => glucose-6P
+M00127	47.22	Thiamine biosynthesis, prokaryotes, AIR (+ DXP/tyrosine) => TMP/TPP
+M00165	45.45	Reductive pentose phosphate cycle (Calvin cycle)
+M00373	41.67	Ethylmalonyl pathway
+M00895	41.67	Thiamine biosynthesis, prokaryotes, AIR (+ DXP/glycine) => TMP/TPP
+M00018	40.0	Threonine biosynthesis, aspartate => homoserine => threonine
+M00909	40.0	UDP-N-acetyl-D-glucosamine biosynthesis, prokaryotes, glucose => UDP-GlcNAc
+M00912	37.5	NAD biosynthesis, tryptophan => quinolinate => NAD
+M00532	36.11	Photorespiration
+M00620	35.71	Incomplete reductive citrate cycle, acetyl-CoA => oxoglutarate
+M00123	33.33	Biotin biosynthesis, pimeloyl-ACP/CoA => biotin
+M00140	33.33	C1-unit interconversion, prokaryotes
+M00309	33.33	Non-phosphorylative Entner-Doudoroff pathway, gluconate/galactonate => glycerate
+M00345	33.33	Formaldehyde assimilation, ribulose monophosphate pathway
+M00346	33.33	Formaldehyde assimilation, serine pathway
+M00368	33.33	Ethylene biosynthesis, methionine => ethylene
+M00565	33.33	Trehalose biosynthesis, D-glucose 1P => trehalose
+M00627	33.33	beta-Lactam resistance, Bla system
+M00842	33.33	Tetrahydrobiopterin biosynthesis, GTP => BH4
+M00843	33.33	L-threo-Tetrahydrobiopterin biosynthesis, GTP => L-threo-BH4
+M00844	33.33	Arginine biosynthesis, ornithine => arginine
+M00913	33.33	Pantothenate biosynthesis, 2-oxoisovalerate/spermine => pantothenate
+M00978	33.33	Ornithine-ammonia cycle
+M00095	28.57	C5 isoprenoid biosynthesis, mevalonate pathway
+M00004	25.0	Pentose phosphate pathway (Pentose phosphate cycle)
+M00007	25.0	Pentose phosphate pathway, non-oxidative phase, fructose 6P => ribose 5P
+M00173	25.0	Reductive citrate cycle (Arnon-Buchanan cycle)
+M00596	25.0	Dissimilatory sulfate reduction, sulfate => H2S
+M00632	25.0	Galactose degradation, Leloir pathway, galactose => alpha-D-glucose-1P
+M00921	25.0	Cyclooctatin biosynthesis, dimethylallyl-PP + isopentenyl-PP => cyclooctatin
+M00950	25.0	Biotin biosynthesis, BioU pathway, pimeloyl-ACP/CoA => biotin
+M00959	25.0	Guanine ribonucleotide degradation, GMP => Urate
+M00975	25.0	Betaine degradation, bacteria, betaine => pyruvate
+M00119	22.22	Pantothenate biosynthesis, valine/L-aspartate => pantothenate
+M00011	20.0	Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate
+M00029	20.0	Urea cycle
+M00552	20.0	D-galactonate degradation, De Ley-Doudoroff pathway, D-galactonate => glycerate-3P
+M00573	20.0	Biotin biosynthesis, BioI pathway, long-chain-acyl-ACP => pimeloyl-ACP => biotin
+M00577	20.0	Biotin biosynthesis, BioW pathway, pimelate => pimeloyl-CoA => biotin
+M00953	20.0	Mugineic acid biosynthesis, methionine => 3-epihydroxymugineic acid
+M00023	16.67	Tryptophan biosynthesis, chorismate => tryptophan
+M00176	16.67	Assimilatory sulfate reduction, sulfate => H2S
+M00609	16.67	Cysteine biosynthesis, methionine => cysteine
+M00622	16.67	Nicotinate degradation, nicotinate => fumarate
+M00892	16.67	UDP-N-acetyl-D-glucosamine biosynthesis, eukaryotes, glucose => UDP-GlcNAc
+M00935	16.67	Methanofuran biosynthesis
+M00958	16.67	Adenine ribonucleotide degradation, AMP => Urate
+M00374	15.38	Dicarboxylate-hydroxybutyrate cycle
+M00017	14.29	Methionine biosynthesis, aspartate => homoserine => methionine
+M00038	14.29	Tryptophan metabolism, tryptophan => kynurenine => 2-aminomuconate
+M00375	14.29	Hydroxypropionate-hydroxybutylate cycle
+M00009	12.5	Citrate cycle (TCA cycle, Krebs cycle)
+M00114	12.5	Ascorbate biosynthesis, plants, fructose-6P => ascorbate
+M00308	12.5	Semi-phosphorylative Entner-Doudoroff pathway, gluconate => glycerate-3P
+M00897	12.5	Thiamine biosynthesis, plants, AIR (+ NAD+) => TMP/thiamine/TPP
+M00376	11.11	3-Hydroxypropionate bi-cycle
+M00126	10.0	Tetrahydrofolate biosynthesis, GTP => THF
+M00055	7.69	N-glycan precursor biosynthesis
+M00117	5.56	Ubiquinone biosynthesis, prokaryotes, chorismate (+ polyprenyl-PP) => ubiquinol
