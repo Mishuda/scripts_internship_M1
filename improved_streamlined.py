@@ -21,7 +21,7 @@ import numpy as np
 from datetime import datetime
 
 import matplotlib as mpl
-mpl.rcParams['svg.fonttype'] = 'none'  # <-- disables path conversion
+mpl.rcParams['svg.fonttype'] = 'none'  # <-- disables path conversion (VERY IMPORTANT for text rendering in SVG)
 
 
 def create_output_folder():
@@ -148,7 +148,7 @@ def create_pivot_table(df, min_completeness=50, group_order=None):
     print(f"Created pivot table with {len(pivot_df)} modules × {len(pivot_df.columns)} samples")
     return pivot_df
 
-def create_heatmap(pivot_df, output_file=None, figsize=None, title=None, transpose=False):
+def create_heatmap(pivot_df, output_file=None, figsize=None, title=None, transpose=True, compact=False):
     """Create and display a heatmap from the pivot table with custom colors and gray for <50%."""
     # Transpose if requested (useful when modules >> samples)
     if transpose:
@@ -161,20 +161,36 @@ def create_heatmap(pivot_df, output_file=None, figsize=None, title=None, transpo
         n_modules = len(pivot_df)
         n_samples = len(pivot_df.columns)
         
-        # More balanced calculation that prevents extremely tall heatmaps
-        module_factor = min(0.25, 10/n_modules)  # Limit how much height per module
-        sample_factor = 0.8  # Width per sample
-        
-        fig_width = max(10, n_samples * sample_factor)
-        fig_height = max(8, min(30, n_modules * module_factor))  # Cap height at 30 inches
-        
-        # Ensure aspect ratio isn't too extreme
-        aspect_ratio = fig_height / fig_width
-        if aspect_ratio > 2.5:  # If height is more than 2.5x width
-            fig_height = fig_width * 2.5
+        if compact:
+            # Compact mode: very small square cells
+            cell_size = 0.12  # Even smaller square cells (0.12 inches each)
             
-        figsize = (fig_width, fig_height)
-        print(f"Auto-sized figure: {fig_width:.1f}\" × {fig_height:.1f}\"")
+            if transpose:
+                # When transposed: samples on Y-axis, modules on X-axis
+                fig_width = max(6, n_modules * cell_size + 2)  # Add space for labels
+                fig_height = max(3, n_samples * cell_size + 1.5)  # Add space for title
+            else:
+                # Normal orientation: modules on Y-axis, samples on X-axis
+                fig_width = max(4, n_samples * cell_size + 2)
+                fig_height = max(6, n_modules * cell_size + 2)
+            
+            figsize = (fig_width, fig_height)
+            print(f"Compact square cells: {fig_width:.1f}\" × {fig_height:.1f}\" (cell size: {cell_size}\")")
+        else:
+            # Normal mode: More balanced calculation that prevents extremely tall heatmaps
+            module_factor = min(0.25, 10/n_modules)  # Limit how much height per module
+            sample_factor = 0.8  # Width per sample
+            
+            fig_width = max(10, n_samples * sample_factor)
+            fig_height = max(8, min(30, n_modules * module_factor))  # Cap height at 30 inches
+            
+            # Ensure aspect ratio isn't too extreme
+            aspect_ratio = fig_height / fig_width
+            if aspect_ratio > 2.5:  # If height is more than 2.5x width
+                fig_height = fig_width * 2.5
+                
+            figsize = (fig_width, fig_height)
+            print(f"Auto-sized figure: {fig_width:.1f}\" × {fig_height:.1f}\"")
     
     # Create figure
     plt.figure(figsize=figsize)
@@ -183,33 +199,61 @@ def create_heatmap(pivot_df, output_file=None, figsize=None, title=None, transpo
     color_scheme = [ '#B39DDB', "#8D68CE", "#614D9B", '#311B92']
     custom_cmap = LinearSegmentedColormap.from_list("custom_cmap", color_scheme)
     custom_cmap.set_bad(color='#BDBDBD')  # Gray for masked values
+    
+    # Adjust parameters for compact mode
+    if compact:
+        linewidth = 1  # Slightly thicker lines to create visible gaps between squares
+        linecolor = 'white'  # White lines for clean separation
+        cbar_shrink = 0.6
+        # Compact mode: NO annotations (percentages)
+        show_annotations = False
+    else:
+        linewidth = 0.5
+        linecolor = 'white'
+        annotation_font_size = 10
+        cbar_shrink = 1.0
+        show_annotations = True
+    
     ax = sns.heatmap(
         masked_data,
-        annot=True,
-        fmt=".1f",
+        annot=show_annotations,
+        fmt=".1f" if show_annotations else None,
         cmap=custom_cmap,
-        linewidths=0.5,
+        linewidths=linewidth,
+        linecolor=linecolor,  # White lines for separation
         vmin=50,  # Only color values 50–100
         vmax=100,
-        cbar_kws={'label': 'Completeness (%)'}
+        cbar_kws={'label': 'Completeness (%)', 'shrink': cbar_shrink},
+        annot_kws={'size': annotation_font_size} if show_annotations else None,
+        square=True  # Force square cells
     )
     # Add a horizontal line at 50% on the colorbar
     cbar = ax.collections[0].colorbar
     cbar.ax.hlines(50, *cbar.ax.get_xlim(), colors='black', linewidth=2, linestyles='--')
     cbar.ax.text(0.5, 50, '50% cutoff', color='black', ha='center', va='bottom', fontsize=10, weight='bold', rotation=0, backgroundcolor='white')
     
-    # Add title and labels
-    plt.title(title or "Module Completeness Across Samples", fontsize=14, pad=20)
+    # Add title and labels with compact mode adjustments
+    if compact:
+        title_fontsize = 8
+        label_fontsize = 6
+        tick_fontsize = 5
+    else:
+        title_fontsize = 14
+        label_fontsize = 12
+        tick_fontsize = 10
+    
+    plt.title(title or "Module Completeness Across Samples", fontsize=title_fontsize, pad=20)
     # Set axis labels depending on transpose
     if transpose:
-        plt.xlabel("Modules", fontsize=12)
-        plt.ylabel("Samples", fontsize=12)
+        plt.xlabel("Modules", fontsize=label_fontsize)
+        plt.ylabel("Samples", fontsize=label_fontsize)
     else:
-        plt.ylabel("Modules", fontsize=12)
-        plt.xlabel("Samples", fontsize=12)
+        plt.ylabel("Modules", fontsize=label_fontsize)
+        plt.xlabel("Samples", fontsize=label_fontsize)
     
-    # Rotate x-axis labels
-    plt.xticks(rotation=45, ha='right')
+    # Rotate x-axis labels and set font size
+    plt.xticks(rotation=45, ha='right', fontsize=tick_fontsize)
+    plt.yticks(fontsize=tick_fontsize)
     
     # Adjust layout
     if len(pivot_df) > 15 or len(pivot_df.columns) > 8:
@@ -240,6 +284,8 @@ def main():
     parser.add_argument('--title', help='Custom title for the heatmap')
     parser.add_argument('--transpose', action='store_true',
                         help='Transpose the heatmap (put samples on Y-axis, modules on X-axis)')
+    parser.add_argument('--compact', action='store_true',
+                        help='Use compact square cells for publication-ready layout')
     
     args = parser.parse_args()
     
@@ -268,7 +314,7 @@ def main():
         figsize = tuple(args.figsize) if args.figsize else None
         # Save output files in the timestamped folder
         output_file = output_dir / args.output
-        create_heatmap(pivot_df, output_file, figsize, args.title, transpose=args.transpose)
+        create_heatmap(pivot_df, output_file, figsize, args.title, transpose=args.transpose, compact=args.compact)
         
         # 5. Save the data
         data_file = output_dir / Path(args.output).with_suffix('.csv')
