@@ -1,4 +1,8 @@
-# Ignore all CSV, SVG, and PDF files
+# Generated Python files
+__pycache__/
+*.py[cod]
+
+# Generated figures and tables
 *.csv
 *.svg
 *.pdf
